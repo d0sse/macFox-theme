@@ -1,0 +1,78 @@
+/* Firefox macOS style */
+@import "navbar.css";
+@import "urlbar.css";
+@import "sidebar.css";
+@import "findbar.css";
+@import "icons.css";
+@import "tabbar.css";
+
+/* Common colors */
+/*purple #882c92*/
+:root {
+	--tab-loading-fill: #e8883a !important;
+	--hover-color-primary: rgba(0, 0, 0, 0.07);
+	--hover-color-secondary: rgba(0, 0, 0, 0.05);
+	--hover-color-tertiary: rgba(0, 0, 0, 0.2);
+	--tint-color-primary: rgba(97, 97, 97, 1);
+	--background-color-primary: rgba(252, 252, 252, 1);
+	--background-color-secondary: rgba(191, 191, 191, 1);
+	--background-color-tertiary: rgba(252, 252, 252, 0.6);
+	--newtab-background-color: rgba(225, 225, 225, 1);
+}
+
+:root:-moz-lwtheme {
+	--tab-loading-fill: #e8883a !important;
+	--hover-color-primary: rgba(255, 255, 255, 0.07);
+	--hover-color-secondary: rgba(255, 255, 255, 0.05);
+	--hover-color-tertiary: rgba(255, 255, 255, 0.25);
+	--tint-color-primary: rgba(187, 187, 187, 1);
+	--background-color-primary: rgba(38, 38, 38, 1);
+	--background-color-secondary: #302F2F;
+	--background-color-tertiary: rgba(60, 60, 60, 0.6);
+	--newtab-background-color: rgba(40, 40, 40, 1);
+}
+
+:root {
+	--tab-min-height: 32px !important;
+	/* Popup window background color */
+	--toolbar-field-focus-background-color: var(
+		--background-color-primary
+	) !important;
+	--arrowpanel-background: var(--background-color-primary) !important;
+	/* Popup window hightlighted element colors */
+	--autocomplete-popup-highlight-background: var(
+		--hover-color-tertiary
+	) !important;
+	--autocomplete-popup-hover-background: var(--hover-color-primary) !important;
+	/* Empty page background color */
+	--tabpanel-background-color: var(--newtab-background-color) !important;
+	/* Button active color */
+	--button-active-bgcolor: var(--hover-color-tertiary) !important;
+}
+
+
+#nav-bar,
+#PersonalToolbar,
+#titlebar,
+#sidebar-box {
+	--moz-appearance: -moz-mac-vibrant-titlebar-light !important;
+}
+
+#nav-bar:-moz-lwtheme,
+#PersonalToolbar:-moz-lwtheme,
+#titlebar:-moz-lwtheme,
+#sidebar-box:-moz-lwtheme {
+	--moz-appearance: -moz-mac-vibrant-titlebar-dark !important;
+}
+
+#unified-extensions-button{
+  width: 0.1px;
+  padding-inline: 0 !important
+}
+#unified-extensions-button > .toolbarbutton-icon{
+  width: 0 !important;
+}
+#private-browsing-indicator-with-label {
+	margin-right: 10px;
+}
+#private-browsing-indicator-with-label>label, .titlebar-spacer[type="post-tabs"] { display: none !important; }

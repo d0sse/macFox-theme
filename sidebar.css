@@ -1,0 +1,10 @@
+#sidebar-box,
+#sidebar,
+.sidebar-panel,
+body {
+	background: none !important;
+}
+
+#sidebar-box {
+	background-color: var(--background-color-tertiary) !important;
+}

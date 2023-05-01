@@ -1,0 +1,17 @@
+/* 
+Enables compact navigation bar.
+*/
+
+#nav-bar {
+	height: 38px !important;
+}
+
+.titlebar-buttonbox-container {
+	left: 0px !important;
+	top: 11px !important;
+}
+
+#urlbar:not([open]) #urlbar-background {
+	margin-top: 1px !important;
+	height: 26px !important;
+}

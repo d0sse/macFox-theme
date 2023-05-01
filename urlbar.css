@@ -1,0 +1,77 @@
+:root {
+	--url-bar-background-color: rgba(0, 0, 0, 0.05);
+	--url-bar-outline-color: #e8883a;
+}
+
+:root:-moz-lwtheme {
+	--url-bar-background-color: rgba(0, 0, 0, 0.2);
+	--url-bar-outline-color: #e8883a;
+}
+
+#urlbar-container {
+	max-width: 50% !important;
+}
+
+#urlbar {
+	min-height: 28px !important;
+	font-size: 13px !important;
+}
+
+#urlbar[open] {
+	border-radius: 10px !important;
+	box-shadow: 0px 2px 20px rgba(4, 2, 5, 0.2) !important;
+}
+
+/* Centers text in urlbar */
+#urlbar:not([focused]) #urlbar-input {
+	text-align: center !important;
+}
+
+/* Urlbar icons look */
+.urlbar-page-action {
+	height: 24px !important;
+	border-radius: 4px !important;
+}
+
+.urlbar-page-action image {
+	margin-top: -2px !important;
+	transform: scale(0.9, 0.9) !important;
+}
+
+.identity-box-button {
+	border-radius: 4px !important;
+}
+
+.identity-box-button image {
+	transform: scale(0.9, 0.9) !important;
+}
+
+#urlbar-background {
+	border-radius: 6px !important;
+	box-shadow: none !important;
+	outline-offset: -0.5px !important;
+	outline-width: 1.5px !important;
+	outline-color: var(--url-bar-outline-color) !important;
+}
+
+#urlbar:not([open]) #urlbar-background {
+	background-color: var(--url-bar-background-color) !important;
+}
+
+#urlbar[open] #urlbar-background {
+	border-radius: 10px !important;
+	border-color: var(--hover-color-tertiary) !important;
+}
+
+/* Urlbar mode indicator look */
+#urlbar-search-mode-indicator,
+#identity-box.chromeUI #identity-icon-box,
+#identity-box.extensionPage #identity-icon-box {
+	background-color: var(--hover-color-primary) !important;
+}
+
+#tracking-protection-icon-container,
+#star-button-box,
+#notification-popup-box {
+	display: none;
+}

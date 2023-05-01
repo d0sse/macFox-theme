@@ -1,0 +1,20 @@
+#nav-bar #back-button image {
+	list-style-image: url("chrome://global/skin/icons/arrow-left.svg") !important;
+	padding: 5px !important;
+}
+
+#nav-bar #forward-button image {
+	list-style-image: url("chrome://global/skin/icons/arrow-right.svg") !important;
+	padding: 5px !important;
+}
+
+#nav-bar #new-tab-button image {
+	list-style-image: url("chrome://global/skin/icons/plus.svg") !important;
+	padding-top: 4px !important;
+	padding-bottom: 7px !important;
+	padding-right: 5px !important;
+}
+
+#nav-bar #PanelUI-menu-button image {
+	list-style-image: url("chrome://global/skin/icons/more.svg") !important;
+}

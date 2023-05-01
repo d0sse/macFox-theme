@@ -1,0 +1,45 @@
+:root {
+	--tab-hover-color: rgba(0, 0, 0, 0.05);
+	--tab-active-color: rgba(0, 0, 0, 0.1);
+}
+
+:root:-moz-lwtheme {
+	--tab-hover-color: rgba(255, 255, 255, 0.05);
+	--tab-active-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Space between tabs */
+.tabbrowser-tab {
+	padding-inline: 4px !important;
+}
+.tabbrowser-tab:first-of-type {
+	padding-inline-start: 12px !important;
+}
+.tabbrowser-tab:last-of-type {
+	padding-inline-end: 12px !important;
+}
+
+/* Tabbar height */
+.tabbrowser-tab {
+	min-height: 36px !important;
+	max-height: 36px !important;
+	margin-bottom: 0px !important;
+	overflow-clip-margin: 0px !important;
+}
+
+/* Tab appearance */
+.tab-background {
+	background-image: none !important;
+	background-color: transparent !important;
+	box-shadow: none !important;
+	border: none !important;
+	border-radius: 6px !important;
+	min-height: 28px !important;
+}
+.tabbrowser-tab:hover:not([selected]):not([multiselected]) .tab-background {
+	background-color: var(--tab-hover-color) !important;
+}
+.tab-background[selected],
+.tab-background[multiselected] {
+	background-color: var(--tab-active-color) !important;
+}

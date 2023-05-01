@@ -1,0 +1,66 @@
+#nav-bar {
+	height: 42px !important;
+	padding-left: 8px !important;
+	padding-right: 8px !important;
+}
+
+#main-window[inFullscreen] #nav-bar {
+	padding-left: 8px !important;
+}
+
+#nav-bar {
+	background-color: transparent !important;
+}
+
+#navigator-toolbox:not([inFullscreen]) {
+	/* Not fully transparent value fixes url highlight color in dark mode */
+	background-color: rgba(0, 0, 0, 0.01) !important;
+}
+
+#navigator-toolbox[inFullscreen] {
+	background-color: var(--background-color-primary) !important;
+}
+
+/* Toolbar button look */
+:root {
+	--button-hover-bgcolor: var(--hover-color-primary) !important;
+	--toolbarbutton-inner-padding: 6px !important;
+	--toolbarbutton-active-background: var(--hover-color-primary) !important;
+}
+
+#nav-bar .toolbarbutton-1 image,
+#nav-bar .toolbarbutton-1 .toolbarbutton-badge-stack {
+	fill: var(--tint-color-primary) !important;
+	border-radius: 6px !important;
+}
+
+#nav-bar .toolbarbutton-1 {
+	padding: 5px !important;
+}
+
+/* Compresses urlbar in navbar */
+#nav-bar toolbarspring {
+	max-width: none !important;
+	-moz-box-flex: 300 !important;
+}
+
+/* width is nav-bar padding-left - padding-right*/
+#nav-bar toolbarspring:last-of-type:before {
+	-moz-box-flex: 1;
+	display: -moz-box;
+	content: "";
+	width: 82px;
+}
+
+#main-window[inFullscreen] #nav-bar toolbarspring:last-of-type:before {
+	-moz-box-flex: 1;
+	display: -moz-box;
+	content: "";
+	width: 0px;
+}
+
+#reload-button image,
+#stop-button image,
+#downloads-button image {
+	animation-duration: 0s !important;
+}

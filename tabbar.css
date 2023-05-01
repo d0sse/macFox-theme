@@ -1,0 +1,18 @@
+
+:root {
+	--tab-active-color: rgba(252, 252, 252, 1);
+}
+
+:root:-moz-lwtheme {
+	--tab-active-color: rgba(255, 255, 255, 0.1);
+}
+/* Sets tab appearance */
+.tab-background {	
+	background-image: none !important;
+	border-radius: 6px !important;
+	outline: none !important;
+}
+.tab-background[selected],
+.tab-background[multiselected] {
+	background-color: var(--tab-active-color) !important;
+}
