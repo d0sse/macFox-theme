@@ -1,11 +1,28 @@
-host, :root { 
+host,
+:root {
 	--in-content-primary-button-background: #e8883a !important;
 	--tab-loading-fill: #e8883a !important;
 }
+
 body {
 	--newtab-background-color: rgba(225, 225, 225, 1) !important;
 	--newtab-background-color-secondary: rgba(254, 254, 254, 1) !important;
 	--newtab-text-primary-color: rgba(72, 72, 72, 1) !important;
+}
+
+@-moz-document url("about:newtab"),
+url-prefix(about:home),
+url("about:blank") {
+	@media (prefers-color-scheme: dark) {
+		body {
+			background-color: rgba(36, 26, 28, 1) !important;
+		}
+	}
+	@media (prefers-color-scheme: light) {
+		body {
+			background-color: rgba(232, 232, 232, 1) !important;
+		}
+	}
 }
 
 body[lwt-newtab-brighttext] {
@@ -64,8 +81,7 @@ body[lwt-newtab-brighttext] {
 	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1) !important;
 }
 
-.top-site-outer:is(:hover, :focus, .active):not(.placeholder)
-	.context-menu-button {
+.top-site-outer:is(:hover, :focus, .active):not(.placeholder) .context-menu-button {
 	transition-delay: 500ms !important;
 }
 
@@ -95,9 +111,11 @@ body[lwt-newtab-brighttext] {
 	font-weight: 800 !important;
 	user-select: none !important;
 }
+
 html.private {
 	--in-content-page-background: rgba(34, 34, 34, 1) !important;
 }
-.search-inner-wrapper { 
-	display: none!important;
+
+.search-inner-wrapper {
+	display: none !important;
 }
