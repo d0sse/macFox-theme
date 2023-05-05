@@ -20,7 +20,7 @@ url("about:blank") {
 	}
 	@media (prefers-color-scheme: light) {
 		body {
-			background-color: rgba(232, 232, 232, 1) !important;
+			background-color: rgba(224, 220, 219, 1)!important;
 		}
 	}
 }
