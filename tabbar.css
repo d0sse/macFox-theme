@@ -11,6 +11,7 @@
 	background-image: none !important;
 	border-radius: 6px !important;
 	outline: none !important;
+	box-shadow: none!important;
 }
 .tab-background[selected],
 .tab-background[multiselected] {

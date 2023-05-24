@@ -33,7 +33,9 @@
 }
 
 :root {
-	--tab-min-height: 32px !important;
+
+ --tab-min-height: 33px !important; /* adjust to suit your needs */
+ --tab-min-width:  70px !important; /* adjust to suit your needs */
 	/* Popup window background color */
 	--toolbar-field-focus-background-color: var(
 		--background-color-primary
@@ -57,7 +59,10 @@
 #sidebar-box {
 	--moz-appearance: -moz-mac-vibrant-titlebar-light !important;
 }
-
+#TabsToolbar{
+  margin-bottom: 0px !important;
+  margin-top: 5px !important;
+}
 #nav-bar:-moz-lwtheme,
 #PersonalToolbar:-moz-lwtheme,
 #titlebar:-moz-lwtheme,
