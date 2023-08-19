@@ -34,8 +34,8 @@
 
 :root {
 
- --tab-min-height: 31px !important; /* adjust to suit your needs */
- --tab-min-width:  70px !important; /* adjust to suit your needs */
+ --tab-min-height: 29px !important; /* adjust to suit your needs */
+ --tab-min-width:  67px !important; /* adjust to suit your needs */
 	/* Popup window background color */
 	--toolbar-field-focus-background-color: var(
 		--background-color-primary
@@ -61,7 +61,7 @@
 }
 #TabsToolbar{
   margin-bottom: 0px !important;
-  margin-top: 5px !important;
+  margin-top: 4px !important;
   margin-left: 7px;
   margin-right: 10px;
 }
