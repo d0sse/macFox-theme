@@ -7,9 +7,10 @@
 @import "tabbar.css";
 
 /* Common colors */
-/*purple #882c92*/
+/*purple #98339F*/
+/*purple #f47528*/
 :root {
-	--tab-loading-fill: #98339F !important;
+	--tab-loading-fill: #f47528 !important;
 	--hover-color-primary: rgba(0, 0, 0, 0.07);
 	--hover-color-secondary: rgba(0, 0, 0, 0.05);
 	--hover-color-tertiary: rgba(0, 0, 0, 0.2);
@@ -21,7 +22,7 @@
 }
 
 :root:-moz-lwtheme {
-	--tab-loading-fill: #98339F !important;
+	--tab-loading-fill: #f47528 !important;
 	--hover-color-primary: rgba(255, 255, 255, 0.07);
 	--hover-color-secondary: rgba(255, 255, 255, 0.05);
 	--hover-color-tertiary: rgba(255, 255, 255, 0.25);
