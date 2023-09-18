@@ -1,11 +1,11 @@
 :root {
 	--url-bar-background-color: rgba(0, 0, 0, 0.05);
-	--url-bar-outline-color: #f47528;
+	--url-bar-outline-color: #98339F;
 }
 
 :root:-moz-lwtheme {
 	--url-bar-background-color: rgba(0, 0, 0, 0.2);
-	--url-bar-outline-color: #f47528;
+	--url-bar-outline-color: #98339F;
 }
 
 #urlbar-container {
