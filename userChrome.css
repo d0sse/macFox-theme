@@ -19,6 +19,7 @@
 	--background-color-secondary: rgba(191, 191, 191, 1);
 	--background-color-tertiary: rgba(252, 252, 252, 0.6);
 	--newtab-background-color: rgba(225, 225, 225, 1);
+	--body-background-color: rgba(0, 0, 0, 0.06);
 }
 
 :root:-moz-lwtheme {
@@ -31,6 +32,7 @@
 	--background-color-secondary: #302F2F;
 	--background-color-tertiary: rgba(60, 60, 60, 0.6);
 	--newtab-background-color: rgba(40, 40, 40, 1);
+	--body-background-color: rgba(255, 255, 255, 0.05);
 }
 
 :root {
@@ -59,6 +61,7 @@
 #titlebar,
 #sidebar-box {
 	--moz-appearance: -moz-mac-vibrant-titlebar-light !important;
+	background-color: var(--body-background-color)  !important;
 }
 #TabsToolbar{
   margin-bottom: 0px !important;
@@ -66,11 +69,10 @@
   margin-left: 7px;
   margin-right: 10px;
 }
-#nav-bar:-moz-lwtheme,
-#PersonalToolbar:-moz-lwtheme,
-#titlebar:-moz-lwtheme,
+
 #sidebar-box:-moz-lwtheme {
 	--moz-appearance: -moz-mac-vibrant-titlebar-dark !important;
+	background-color: var(--body-background-color)  !important;
 }
 
 #unified-extensions-button{
