@@ -22,32 +22,23 @@
 	--body-background-color: rgba(0, 0, 0, 0.06);
 }
 
-:root:-moz-lwtheme {
-	--tab-loading-fill: #98339F !important;
-	--hover-color-primary: rgba(255, 255, 255, 0.07);
-	--hover-color-secondary: rgba(255, 255, 255, 0.05);
-	--hover-color-tertiary: rgba(255, 255, 255, 0.25);
-	--tint-color-primary: rgba(187, 187, 187, 1);
-	--background-color-primary: rgba(38, 38, 38, 1);
-	--background-color-secondary: #302F2F;
-	--background-color-tertiary: rgba(60, 60, 60, 0.6);
-	--newtab-background-color: rgba(40, 40, 40, 1);
-	--body-background-color: rgba(255, 255, 255, 0.05);
+@media (prefers-color-scheme: dark) {
+	:root {
+		--body-background-color: rgba(255, 255, 255, 0.05);
+	}
 }
 
 :root {
 
- --tab-min-height: 31px !important; /* adjust to suit your needs */
- --tab-min-width:  67px !important; /* adjust to suit your needs */
+	--tab-min-height: 31px !important;
+	/* adjust to suit your needs */
+	--tab-min-width: 67px !important;
+	/* adjust to suit your needs */
 	/* Popup window background color */
-	--toolbar-field-focus-background-color: var(
-		--background-color-primary
-	) !important;
+	--toolbar-field-focus-background-color: var(--background-color-primary) !important;
 	--arrowpanel-background: var(--background-color-primary) !important;
 	/* Popup window hightlighted element colors */
-	--autocomplete-popup-highlight-background: var(
-		--hover-color-tertiary
-	) !important;
+	--autocomplete-popup-highlight-background: var(--hover-color-tertiary) !important;
 	--autocomplete-popup-hover-background: var(--hover-color-primary) !important;
 	/* Empty page background color */
 	--tabpanel-background-color: var(--newtab-background-color) !important;
@@ -61,28 +52,35 @@
 #titlebar,
 #sidebar-box {
 	--moz-appearance: -moz-mac-vibrant-titlebar-light !important;
-	background-color: var(--body-background-color)  !important;
+	background-color: var(--body-background-color) !important;
 }
-#TabsToolbar{
-  margin-bottom: 0px !important;
-  margin-top: 5px !important;
-  margin-left: 7px;
-  margin-right: 10px;
+
+#TabsToolbar {
+	margin-bottom: 0px !important;
+	margin-top: 5px !important;
+	margin-left: 7px;
+	margin-right: 10px;
 }
 
 #sidebar-box:-moz-lwtheme {
 	--moz-appearance: -moz-mac-vibrant-titlebar-dark !important;
-	background-color: var(--body-background-color)  !important;
+	background-color: var(--body-background-color) !important;
 }
 
-#unified-extensions-button{
-  width: 0.1px;
-  padding-inline: 0 !important
+#unified-extensions-button {
+	width: 0.1px;
+	padding-inline: 0 !important
 }
-#unified-extensions-button > .toolbarbutton-icon{
-  width: 0 !important;
+
+#unified-extensions-button>.toolbarbutton-icon {
+	width: 0 !important;
 }
+
 #private-browsing-indicator-with-label {
 	margin-right: 10px;
 }
-#private-browsing-indicator-with-label>label, .titlebar-spacer[type="post-tabs"] { display: none !important; }
+
+#private-browsing-indicator-with-label>label,
+.titlebar-spacer[type="post-tabs"] {
+	display: none !important;
+}

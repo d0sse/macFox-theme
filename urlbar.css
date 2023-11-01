@@ -1,12 +1,15 @@
 :root {
-	--url-bar-background-color: rgba(0, 0, 0, 0.05);
+	--url-bar-background-color: rgba(22, 22, 22, 0.05);
 	--url-bar-outline-color: #98339F;
 }
 
-:root:-moz-lwtheme {
-	--url-bar-background-color: rgba(0, 0, 0, 0.2);
-	--url-bar-outline-color: #98339F;
+@media (prefers-color-scheme: dark) {
+	:root {
+		--url-bar-background-color: rgba(255, 255, 255, 0.05);
+		--url-bar-outline-color: #98339F;
+	}
 }
+
 
 #urlbar-container {
 	max-width: 50% !important;
