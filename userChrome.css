@@ -19,12 +19,12 @@
 	--background-color-secondary: rgba(191, 191, 191, 1);
 	--background-color-tertiary: rgba(252, 252, 252, 0.6);
 	--newtab-background-color: rgba(225, 225, 225, 1);
-	--body-background-color: rgba(0, 0, 0, 0.06);
+	--body-background-color: #f3f1f5;
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--body-background-color: rgba(255, 255, 255, 0.05);
+		--body-background-color: #312f33;
 	}
 }
 
