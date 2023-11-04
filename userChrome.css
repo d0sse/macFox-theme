@@ -28,6 +28,7 @@
 		--background-color-primary: rgba(38, 38, 38, 1);
 		--background-color-secondary: rgba(191, 191, 191, 1);
 		--background-color-tertiary: rgba(252, 252, 252, 0.6);
+		--tint-color-primary: rgba(191, 191, 191, 1);
 	}
 }
 
