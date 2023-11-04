@@ -1,13 +1,15 @@
 :root {
-	--url-border-color: rgba(22, 22, 22, 0.3);
-	--url-bar-background-color: rgba(255, 255, 255, 0.07);
+	--url-border-color: rgba(0, 0, 0, 0.15);
+	--url-placeholder-color: rgba(0, 0, 0, 0.5);
+	--url-bar-background-color: rgba(255, 255, 255, 0.09);
 	--url-bar-outline-color: #98339F;
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--url-border-color: rgba(255, 255, 255, 0.3);
-		--url-bar-background-color: rgba(0, 0, 0, 0.05);
+		--url-border-color: rgba(255, 255, 255, 0.15);
+		--url-placeholder-color: rgba(255, 255, 255, 0.5);
+		--url-bar-background-color: rgba(0, 0, 0, 0.09);
 		--url-bar-outline-color: #98339F;
 	}
 }
@@ -53,11 +55,15 @@
 
 #urlbar-background {
 	border-color: var(--url-border-color) !important;
-	border-radius: 6px !important;
+	border-radius: 8px !important;
 	box-shadow: none !important;
 	outline-offset: -0.5px !important;
 	outline-width: 1.5px !important;
 	outline-color: var(--url-bar-outline-color) !important;
+}
+
+#urlbar *|input::placeholder {
+ color: var(--url-placeholder-color) !important;
 }
 
 #urlbar:not([open]) #urlbar-background {
