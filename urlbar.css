@@ -1,13 +1,13 @@
 :root {
 	--url-border-color: rgba(22, 22, 22, 0.3);
-	--url-bar-background-color: rgba(22, 22, 22, 0);
+	--url-bar-background-color: rgba(255, 255, 255, 0.07);
 	--url-bar-outline-color: #98339F;
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
 		--url-border-color: rgba(255, 255, 255, 0.3);
-		--url-bar-background-color: rgba(255, 255, 255, 0);
+		--url-bar-background-color: rgba(0, 0, 0, 0.05);
 		--url-bar-outline-color: #98339F;
 	}
 }
