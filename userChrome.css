@@ -66,10 +66,6 @@
 	margin-right: 10px;
 }
 
-#sidebar-box:-moz-lwtheme {
-	--moz-appearance: -moz-mac-vibrant-titlebar-dark !important;
-	background-color: var(--body-background-color) !important;
-}
 
 #unified-extensions-button {
 	width: 0.1px;
