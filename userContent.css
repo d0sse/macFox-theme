@@ -10,7 +10,7 @@ url-prefix(about:home),
 url("about:blank") {
 	@media (prefers-color-scheme: dark) {
 		body {
-			background-color: rgba(36, 26, 28, 1) !important;
+			background-color: rgba(0, 0, 0, 0.4) !important;
 		}
 	}
 	@media (prefers-color-scheme: light) {
@@ -24,6 +24,10 @@ body[lwt-newtab-brighttext] {
 	--newtab-background-color: rgba(34, 34, 34, 1) !important;
 	--newtab-background-color-secondary: rgba(34, 34, 34, 1) !important;
 	--newtab-text-primary-color: rgba(232, 232, 232, 1) !important;
+}
+
+.customize-menu, .personalize-button {
+	display: none!important;
 }
 
 .ds-outer-wrapper-breakpoint-override main {
