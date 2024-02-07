@@ -1,7 +1,7 @@
 :root {
 	--url-border-color: rgba(0, 0, 0, 0.15);
 	--url-placeholder-color: rgba(0, 0, 0, 0.5);
-	--url-bar-background-color: rgba(255, 255, 255, 0.09);
+	--url-bar-background-color: rgba(255, 255, 255, 0.4);
 	--url-bar-outline-color: #98339F;
 }
 
@@ -9,7 +9,7 @@
 	:root {
 		--url-border-color: rgba(255, 255, 255, 0.15);
 		--url-placeholder-color: rgba(255, 255, 255, 0.5);
-		--url-bar-background-color: rgba(0, 0, 0, 0.09);
+		--url-bar-background-color: rgba(0, 0, 0, 0.4);
 		--url-bar-outline-color: #98339F;
 	}
 }
