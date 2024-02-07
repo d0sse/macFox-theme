@@ -20,8 +20,9 @@
 }
 
 #urlbar {
-	min-height: 26px !important;
+	min-height: 30px !important;
 	font-size: 13px !important;
+	margin-bottom: 2px!important;
 }
 
 #urlbar[open] {
@@ -37,7 +38,7 @@
 /* Urlbar icons look */
 .urlbar-page-action {
 	height: 24px !important;
-	border-radius: 4px !important;
+	border-radius: 5px !important;
 }
 
 .urlbar-page-action image {
