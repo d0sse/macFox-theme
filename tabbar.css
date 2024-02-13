@@ -20,3 +20,6 @@
 .tab-background[multiselected] {
 	background-color: var(--tab-active-color) !important;
 }
+#tabbrowser-tabs {
+  --tab-loading-fill: #98339F!important;
+}
