@@ -58,8 +58,7 @@
 	border-color: var(--url-border-color) !important;
 	border-radius: 8px !important;
 	box-shadow: none !important;
-	outline-offset: -0.5px !important;
-	outline-width: 1.5px !important;
+	outline-width: 2px !important;
 	outline-color: var(--url-bar-outline-color) !important;
 }
 
