@@ -1,10 +1,10 @@
 :root {
-	--tab-active-color: rgba(0, 0, 0, 0.15);
+	--tab-active-color: rgba(0, 0, 0, 0.12);
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--tab-active-color: rgba(255, 255, 255, 0.15);
+		--tab-active-color: rgba(255, 255, 255, 0.12);
 	}
 }
 
@@ -22,4 +22,8 @@
 }
 #tabbrowser-tabs {
   --tab-loading-fill: #98339F!important;
+}
+
+.titlebar-spacer[type="pre-tabs"]{
+	width: 20px!important;
 }
