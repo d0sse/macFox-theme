@@ -3,18 +3,18 @@
 
 Hi! I'm [d0sse](https://github.com/d0sse) and  this is Minimalist Mac - Safari-like - Firefox theme, based on **[firefox-macos-style](https://github.com/nchlscs/firefox-macos-style)** 
 
-##Features 
+## Features 
 - Simple
 - Light / Dark Version 
 - Now with automatic system accent color! 🎨
 
-####Light Version 
+#### Light Version 
 ![Light Screenshot](screen-light.jpg "Screen")
 
-####Dark Version
+#### Dark Version
 ![Dark Screenshot](screen-dark.jpg "Screen")
 
-####How to install
+#### How to install
 To start using MaterialFox UPDATED, follow these steps:
 
 1. Go to the following url address about:config
