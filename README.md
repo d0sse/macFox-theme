@@ -15,7 +15,7 @@ Hi! I'm [d0sse](https://github.com/d0sse) and  this is Minimalist Mac - Safari-l
 ![Dark Screenshot](screen-dark.jpg "Screen")
 
 #### How to install
-To start using MaterialFox UPDATED, follow these steps:
+To start using MacFox, follow these steps:
 
 1. Go to the following url address about:config
 2. Ensure the following properties are set to true:
