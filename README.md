@@ -9,10 +9,10 @@ Hi! I'm [d0sse](https://github.com/d0sse) and  this is Minimalist Mac - Safari-l
 - Now with automatic system accent color! 🎨
 
 ####Light Version 
-![Light Screenshot](screen-light.jpg link "Screen")
+![Light Screenshot](screen-light.jpg "Screen")
 
 ####Dark Version
-![Dark Screenshot](screen-dark.jpg link "Screen")
+![Dark Screenshot](screen-dark.jpg "Screen")
 
 ####How to install
 To start using MaterialFox UPDATED, follow these steps:
