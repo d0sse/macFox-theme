@@ -2,7 +2,7 @@
 	--url-border-color: rgba(0, 0, 0, 0.15);
 	--url-placeholder-color: rgba(0, 0, 0, 0.5);
 	--url-bar-background-color: rgba(255, 255, 255, 0.4);
-	--url-bar-outline-color: #98339F;
+	--url-bar-outline-color: AccentColor;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -10,7 +10,7 @@
 		--url-border-color: rgba(255, 255, 255, 0.15);
 		--url-placeholder-color: rgba(255, 255, 255, 0.5);
 		--url-bar-background-color: rgba(0, 0, 0, 0.4);
-		--url-bar-outline-color: #98339F;
+		--url-bar-outline-color: AccentColor;
 	}
 }
 

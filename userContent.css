@@ -1,7 +1,7 @@
 host,
 :root {
-	--in-content-primary-button-background: #98339F !important;
-	--tab-loading-fill: #98339F !important;
+	--in-content-primary-button-background: AccentColor !important;
+	--tab-loading-fill: AccentColor !important;
 }
 
 
