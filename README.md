@@ -8,11 +8,12 @@ Hi! I'm [d0sse](https://github.com/d0sse) and  this is Minimalist Mac - Safari-l
 - Light / Dark Version 
 - Now with automatic system accent color! 🎨
 
-#### Light Version 
-![Light Screenshot](screen-light.jpg "Screen")
+| Light Version* | Dark Version* |
+|---|---|
+|![Light Screenshot](screen-light.jpg "Screen")|![Dark Screenshot](screen-dark.jpg "Screen")|
 
-#### Dark Version
-![Dark Screenshot](screen-dark.jpg "Screen")
+*_**Note:** This setup looks best on macOS_
+
 
 #### How to install
 To start using MacFox, follow these steps:
