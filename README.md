@@ -12,7 +12,7 @@ Hi! I'm [d0sse](https://github.com/d0sse) and  this is Minimalist Mac - Safari-l
 |---|---|
 |![Light Screenshot](screen-light.jpg "Screen")|![Dark Screenshot](screen-dark.jpg "Screen")|
 
-*_**Note:** This setup looks best on macOS_
+_**Note:** This setup looks best on macOS_
 
 
 #### How to install
