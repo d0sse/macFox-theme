@@ -26,12 +26,15 @@ To start using MacFox, follow these steps:
 	layout.css.color-mix.enabled
 	```
 3. Go to the following url address about:support
-4. Find Profile Folder and click Open Folder button
-5. Go to the folder with the ternimal (on macOS drag the folder to `terminal.app`) 
+4. Find "Profile Folder" section in the "Application Basics" list and copy the path (defined below as `$path`)
+5. Open `terminal.app` and type:
+   	```
+	cd $path
+	```
 6. Type in the following command:
 	```
 	git clone git@github.com:d0sse/macFox-theme.git chrome
 	```
-7. Restart Firefox to apply changes
+87 Restart Firefox to apply changes
 
 Enjoy 🎉
