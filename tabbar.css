@@ -41,8 +41,8 @@
 	padding-inline: 4px !important;
 }
 .tabbrowser-tab:first-of-type {
-	padding-inline-start: 10px !important;
+	padding-inline-start: 8px !important;
 }
 .tabbrowser-tab:last-of-type {
-	padding-inline-end: 10px !important;
+	padding-inline-end: 8px !important;
 }
