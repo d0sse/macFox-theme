@@ -1,19 +1,28 @@
 :root {
-	--tab-active-color: rgba(0, 0, 0, 0.12);
+	--tab-color: rgba(0, 0, 0, 0.07);
+	--tab-hover-color: rgba(0, 0, 0, 0.12);
+	--tab-active-color: rgba(0, 0, 0, 0.18);
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--tab-active-color: rgba(255, 255, 255, 0.12);
+		--tab-color: rgba(255, 255, 255, 0.07);
+		--tab-hover-color: rgba(255, 255, 255, 0.12);
+		--tab-active-color: rgba(255, 255, 255, 0.18);
 	}
 }
 
 /* Sets tab appearance */
 .tab-background {	
+	background-color: var(--tab-color);
 	background-image: none !important;
 	border-radius: 6px !important;
 	outline: none !important;
 	box-shadow: none!important;
+}
+
+.tabbrowser-tab:hover:not([selected]):not([multiselected]) .tab-background {
+	background-color: var(--tab-hover-color) !important;
 }
 
 .tab-background[selected],
@@ -26,4 +35,14 @@
 
 .titlebar-spacer[type="pre-tabs"]{
 	width: 15px!important;
+}
+
+.tabbrowser-tab {
+	padding-inline: 4px !important;
+}
+.tabbrowser-tab:first-of-type {
+	padding-inline-start: 10px !important;
+}
+.tabbrowser-tab:last-of-type {
+	padding-inline-end: 10px !important;
 }
