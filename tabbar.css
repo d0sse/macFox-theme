@@ -1,12 +1,12 @@
 :root {
-	--tab-color: rgba(0, 0, 0, 0.07);
+	--tab-color: rgba(0, 0, 0, 0.05);
 	--tab-hover-color: rgba(0, 0, 0, 0.12);
 	--tab-active-color: rgba(0, 0, 0, 0.18);
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--tab-color: rgba(255, 255, 255, 0.07);
+		--tab-color: rgba(255, 255, 255, 0.05);
 		--tab-hover-color: rgba(255, 255, 255, 0.12);
 		--tab-active-color: rgba(255, 255, 255, 0.18);
 	}
