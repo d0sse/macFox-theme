@@ -1,9 +1,26 @@
 host,
 :root {
+	--brand-color-accent: AccentColor !important;
+  	--brand-color-accent-hover: AccentColor !important;
 	--in-content-primary-button-background: AccentColor !important;
 	--tab-loading-fill: AccentColor !important;
+	--in-content-primary-button-background-hover: AccentColor !important;
+  	--in-content-primary-button-background-active: AccentColor !important;
+  	--in-content-focus-outline-color: AccentColor !important;
+  	--focus-outline-color: AccentColor !important;
+  	--in-content-link-color: AccentColor !important;
+ 	--in-content-link-color-hover: AccentColor !important;
+	--in-content-accent-color: AccentColor !important;
+	--link-color: AccentColor !important;
+	--link-color-hover: AccentColor !important;
+	--link-color-active: AccentColor !important;
+	--link-color-visited: AccentColor !important;
 }
-
+.toggle-button {
+	--toggle-background-color-pressed: AccentColor !important;
+	--toggle-background-color-pressed-hover: AccentColor !important;
+	--toggle-background-color-pressed-active: AccentColor !important;
+}
 
 @-moz-document url("about:newtab"),
 url-prefix(about:home),
@@ -20,76 +37,12 @@ url("about:blank") {
 	}
 }
 
-body[lwt-newtab-brighttext] {
-	--newtab-background-color: rgba(34, 34, 34, 1) !important;
-	--newtab-background-color-secondary: rgba(34, 34, 34, 1) !important;
-	--newtab-text-primary-color: rgba(232, 232, 232, 1) !important;
-}
-
 .customize-menu, .personalize-button {
 	display: none!important;
 }
 
 .ds-outer-wrapper-breakpoint-override main {
 	width: 65% !important;
-}
-
-.top-site-outer .tile {
-	border-radius: 10px !important;
-	background-color: #ffffff !important;
-	height: 64px !important;
-	width: 64px !important;
-	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15) !important;
-}
-
-.top-site-outer .title .icon {
-	display: none !important;
-}
-
-.top-site-outer .title {
-	width: 80px !important;
-	margin-left: -8px !important;
-	font-size: 12px !important;
-}
-
-.icon-wrapper {
-	height: 52px !important;
-	width: 52px !important;
-	border-radius: 6px !important;
-}
-
-/* Two lines in Top Sites title */
-.top-site-outer .title span {
-	white-space: break-spaces !important;
-	line-height: 16px !important;
-	height: 32px !important;
-}
-
-.top-site-outer {
-	width: 80px !important;
-	padding-block: 8px !important;
-	background-color: transparent !important;
-	align-content: center !important;
-}
-
-.top-site-outer .context-menu-button {
-	margin-top: 8px !important;
-	margin-right: -16px !important;
-	background-color: var(--newtab-background-color-secondary) !important;
-	border-radius: 12px !important;
-	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1) !important;
-}
-
-.top-site-outer:is(:hover, :focus, .active):not(.placeholder) .context-menu-button {
-	transition-delay: 500ms !important;
-}
-
-.top-sites-list {
-	margin-left: -16px !important;
-}
-
-.top-site-outer .top-site-icon {
-	background-color: transparent !important;
 }
 
 .personalize-button {

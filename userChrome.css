@@ -20,6 +20,7 @@
 	--background-color-tertiary: rgba(252, 252, 252, 0.6);
 	--newtab-background-color: rgba(225, 225, 225, 1);
 	--body-background-color: #f3f1f7;
+	--button-primary-bgcolor: AccentColor !important;
 }
 
 @media (prefers-color-scheme: dark) {

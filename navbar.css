@@ -64,3 +64,16 @@
 #downloads-button image {
 	animation-duration: 0s !important;
 }
+
+/* center */
+#nav-bar toolbarspring:last-of-type:before {
+	display: block;
+	content: "";
+	width: 158px;
+}
+
+#main-window[inFullscreen] #nav-bar toolbarspring:last-of-type:before {
+	display: block;
+	content: "";
+	width: 38px;
+}
