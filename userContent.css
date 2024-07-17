@@ -27,41 +27,22 @@ url-prefix(about:home),
 url("about:blank") {
 	@media (prefers-color-scheme: dark) {
 		body {
-			background-color: rgba(0, 0, 0, 0.4) !important;
+			background-color: #37343c !important;
 		}
 	}
 	@media (prefers-color-scheme: light) {
 		body {
-			background-color: rgba(225, 225, 225, 0.7)!important;
+			background-color: #f3f1f7 !important;
 		}
 	}
 }
 
 .customize-menu, .personalize-button {
-	display: none!important;
-}
-
-.ds-outer-wrapper-breakpoint-override main {
-	width: 65% !important;
+	display: none !important;
 }
 
 .personalize-button {
-	position: fixed !important;
-	bottom: 16px !important;
-	top: unset !important;
-	background-image: url(chrome://browser/skin/permissions.svg) !important;
-}
-
-.section-top-bar,
-.section-title {
-	display: block !important;
-	visibility: visible !important;
-}
-
-.section-title span {
-	font-size: 20px !important;
-	font-weight: 800 !important;
-	user-select: none !important;
+	display: none !important;
 }
 
 html.private {
