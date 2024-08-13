@@ -1,5 +1,5 @@
 # 👋 Welcome to MacFox-Theme!
-## Safari like minimalistic theme
+Safari like minimalistic theme
 
 Hi! I'm [d0sse](https://github.com/d0sse) and  this is Minimalist Mac - Safari-like - Firefox theme, based on **[firefox-macos-style](https://github.com/nchlscs/firefox-macos-style)** 
 
