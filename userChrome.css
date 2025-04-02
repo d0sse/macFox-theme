@@ -68,6 +68,10 @@
 	background-color: var(--body-background-color) !important;
 }
 
+#TabsToolbar .titlebar-buttonbox-container {
+	margin-left: 6px !important;
+	margin-top: 1px !important;
+}
 
 #unified-extensions-button {
 	width: 0.1px;
