@@ -1,21 +1,22 @@
 host,
 :root {
 	--brand-color-accent: AccentColor !important;
-  	--brand-color-accent-hover: AccentColor !important;
+	--brand-color-accent-hover: AccentColor !important;
 	--in-content-primary-button-background: AccentColor !important;
 	--tab-loading-fill: AccentColor !important;
 	--in-content-primary-button-background-hover: AccentColor !important;
-  	--in-content-primary-button-background-active: AccentColor !important;
-  	--in-content-focus-outline-color: AccentColor !important;
-  	--focus-outline-color: AccentColor !important;
-  	--in-content-link-color: AccentColor !important;
- 	--in-content-link-color-hover: AccentColor !important;
+	--in-content-primary-button-background-active: AccentColor !important;
+	--in-content-focus-outline-color: AccentColor !important;
+	--focus-outline-color: AccentColor !important;
+	--in-content-link-color: AccentColor !important;
+	--in-content-link-color-hover: AccentColor !important;
 	--in-content-accent-color: AccentColor !important;
 	--link-color: AccentColor !important;
 	--link-color-hover: AccentColor !important;
 	--link-color-active: AccentColor !important;
 	--link-color-visited: AccentColor !important;
 }
+
 .toggle-button {
 	--toggle-background-color-pressed: AccentColor !important;
 	--toggle-background-color-pressed-hover: AccentColor !important;
@@ -27,17 +28,19 @@ url-prefix(about:home),
 url("about:blank") {
 	@media (prefers-color-scheme: dark) {
 		body {
-			background-color: #37343c !important;
+			background-color: #2d2d2f !important;
 		}
 	}
+
 	@media (prefers-color-scheme: light) {
 		body {
-			background-color: #f3f1f7 !important;
+			background-color: #f1f0f2 !important;
 		}
 	}
 }
 
-.customize-menu, .personalize-button {
+.customize-menu,
+.personalize-button {
 	display: none !important;
 }
 
