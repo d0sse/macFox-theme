@@ -1,7 +1,7 @@
 # 👋 Welcome to MacFox-Theme
 ## Safari like, minimalistic theme.
 
-Hi! I'm [d0sse](https://github.com/d0sse) and  this is Minimalist Mac - Safari-like - Firefox theme.** 
+Hi! I'm [d0sse](https://github.com/d0sse) and  this is Minimalist Mac - Safari-like - Firefox theme.
 
 ## Features 
 - Simple
