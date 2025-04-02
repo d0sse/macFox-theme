@@ -60,12 +60,31 @@
 	background-color: var(--body-background-color) !important;
 }
 
+#nav-bar>*,
+#PersonalToolbar>*,
+#titlebar>*,
+#sidebar-box>* {
+	opacity: inherit !important;
+}
+
 #TabsToolbar {
+	opacity: 1 !important;
 	padding-bottom: 2px !important;
 	padding-top: 2px !important;
 	padding-left: 5px;
 	padding-right: 10px;
 	background-color: var(--body-background-color) !important;
+}
+
+#TabsToolbar>* {
+	opacity: inherit !important;
+	/* Prevent inheritance */
+}
+
+/* Change background color when window is inactive */
+:root:-moz-window-inactive #TabsToolbar {
+	background-color: var(--body-background-color) !important;
+	/* Change this color */
 }
 
 #TabsToolbar .titlebar-buttonbox-container {
