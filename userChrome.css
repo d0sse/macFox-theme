@@ -20,12 +20,14 @@
 	--background-color-tertiary: rgba(252, 252, 252, 0.6);
 	--newtab-background-color: rgba(225, 225, 225, 1);
 	--body-background-color: #f1f0f2;
+	--body-background-color-inactive: #e5e4e5;
 	--button-primary-bgcolor: AccentColor !important;
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
 		--body-background-color: #2d2d2f;
+		--body-background-color-inactive: #252427;
 		--background-color-primary: rgba(38, 38, 38, 1);
 		--background-color-secondary: rgba(191, 191, 191, 1);
 		--background-color-tertiary: rgba(252, 252, 252, 0.6);
@@ -113,4 +115,24 @@
 #nav-bar {
 	padding-top: 2px !important;
 	padding-bottom: 2px !important;
+}
+
+/* When the window is inactive */
+:root:-moz-window-inactive #TabsToolbar,
+:root:-moz-window-inactive #nav-bar,
+:root:-moz-window-inactive #PersonalToolbar,
+:root:-moz-window-inactive #titlebar,
+:root:-moz-window-inactive #sidebar-box {
+	background-color: var(--body-background-color-inactive) !important;
+	/* Change this color */
+}
+
+/* When the window is active */
+:root:not(:-moz-window-inactive) #TabsToolbar,
+:root:not(:-moz-window-inactive) #nav-bar,
+:root:not(:-moz-window-inactive) #PersonalToolbar,
+:root:not(:-moz-window-inactive) #titlebar,
+:root:not(:-moz-window-inactive) #sidebar-box {
+	background-color: var(--body-background-color) !important;
+	/* Change this color */
 }
