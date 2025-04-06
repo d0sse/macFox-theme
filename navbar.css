@@ -82,11 +82,11 @@
 /* FindBar */
 
 findbar {
-	background-color: rgba(255, 255, 255, 0.4) !important;
+	background-color: var(--background-color-primary) !important;
 }
 
 /* Style the FindBar text input */
 .findbar-textbox {
 	border: 1px solid #922f99 !important;
-	background-color: rgba(255, 255, 255, 0.8) !important;
+	background-color: rgba(255, 255, 255, 0.2) !important;
 }
