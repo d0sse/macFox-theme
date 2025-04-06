@@ -1,15 +1,16 @@
 /* Firefox macOS style */
 @import "navbar.css";
 @import "urlbar.css";
-@import "sidebar.css";
-@import "findbar.css";
 @import "icons.css";
 @import "tabbar.css";
 
-/* Common colors */
-/*purple #98339F*/
-/*purple #f47528*/
+
 :root {
+	--bg-url-bar-color: rgba(0, 0, 0, 0.04);
+	--bg-url-bar-inactive-color: rgba(0, 0, 0, 0.15);
+	--toolbar-bgcolor: transparent !important;
+	--toolbar-field-background-color: transparent !important;
+	--lwt-accent-color: transparent !important;
 	--tab-loading-fill: AccentColor !important;
 	--hover-color-primary: rgba(0, 0, 0, 0.07);
 	--hover-color-secondary: rgba(0, 0, 0, 0.05);
@@ -27,6 +28,8 @@
 
 @media (prefers-color-scheme: dark) {
 	:root {
+		--bg-url-bar-color: rgba(255, 255, 255, 0.08);
+		--bg-url-bar-inactive-color: rgba(255, 255, 255, 0.03);
 		--body-background-color: #2d2d2f;
 		--body-background-color-inactive: #252427;
 		--body-background-color-inactive-2: #262526;
@@ -55,45 +58,42 @@
 	--button-active-bgcolor: var(--hover-color-tertiary) !important;
 }
 
-
+/* Active Window Styles */
+#navigator-toolbox,
 #nav-bar,
-#PersonalToolbar,
-#titlebar,
-#sidebar-box {
-	opacity: 1 !important;
-	background-color: var(--body-background-color) !important;
+#TabsToolbar,
+#titlebar {
+	background: -moz-mac-vibrancy-titlebar-light !important;
+	/* Native macOS wallpaper tinting */
+	-moz-appearance: -moz-mac-vibrancy-titlebar-light !important;
+	transition: background 0.2s ease-in-out;
 }
 
-#nav-bar>*,
-#PersonalToolbar>*,
-#titlebar>*,
-#sidebar-box>* {
-	opacity: inherit !important;
+/* Inactive Window Styles */
+:root:-moz-window-inactive #navigator-toolbox,
+:root:-moz-window-inactive #nav-bar,
+:root:-moz-window-inactive #TabsToolbar,
+:root:-moz-window-inactive #titlebar {
+	background: -moz-mac-vibrancy-underlay !important;
+	/* Slightly desaturated tint */
+	-moz-appearance: -moz-mac-vibrancy-dark !important;
+	opacity: 0.9;
 }
 
-#TabsToolbar {
-	opacity: 1;
-	padding-bottom: 2px !important;
-	padding-top: 2px !important;
-	padding-left: 5px;
-	padding-right: 10px;
-	background-color: var(--body-background-color) !important;
+/* Optional: Make the URL bar blend better */
+#urlbar {
+	border-radius: 8px !important;
+	background: var(--bg-url-bar-color) !important;
+	backdrop-filter: blur(20px) !important;
 }
 
-#TabsToolbar>* {
-	opacity: inherit !important;
-	/* Prevent inheritance */
-}
-
-/* Change background color when window is inactive */
-:root:-moz-window-inactive #TabsToolbar {
-	background-color: var(--body-background-color) !important;
-	/* Change this color */
+:root:-moz-window-inactive #urlbar {
+	background: var(--bg-url-bar-inactive-color) !important;
 }
 
 #TabsToolbar .titlebar-buttonbox-container {
 	margin-left: 6px !important;
-	margin-top: 1px !important;
+	margin-top: 2px !important;
 }
 
 #unified-extensions-button {
@@ -119,28 +119,9 @@
 	padding-bottom: 2px !important;
 }
 
-/* When the window is inactive */
-:root:-moz-window-inactive #nav-bar,
-:root:-moz-window-inactive #PersonalToolbar,
-:root:-moz-window-inactive #titlebar,
-:root:-moz-window-inactive #sidebar-box {
-	background-color: var(--body-background-color-inactive-2) !important;
-	/* Change this color */
-}
-
-:root:-moz-window-inactive #TabsToolbar {
-	background-color: var(--body-background-color-inactive) !important;
-}
-
-/* When the window is active */
-:root:not(:-moz-window-inactive) #nav-bar,
-:root:not(:-moz-window-inactive) #PersonalToolbar,
-:root:not(:-moz-window-inactive) #titlebar,
-:root:not(:-moz-window-inactive) #sidebar-box {
-	background-color: var(--body-background-color) !important;
-	/* Change this color */
-}
-
-:root:not(:-moz-window-inactive) #TabsToolbar {
-	background-color: var(--body-background-color) !important;
+#TabsToolbar {
+	padding-bottom: 1px !important;
+	padding-top: 3px !important;
+	padding-left: 5px;
+	padding-right: 10px;
 }
