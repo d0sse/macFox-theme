@@ -47,5 +47,3 @@ git clone <git@github.com>:d0sse/macFox-theme.git chrome
 7. Restart Firefox to apply changes
 
 Enjoy 🎉
-
-Thanks!
