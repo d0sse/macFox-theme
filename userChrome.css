@@ -125,3 +125,10 @@
 	padding-left: 5px;
 	padding-right: 10px;
 }
+
+:root[sizemode="fullscreen"] #sidebar-header,
+:root[sizemode="fullscreen"] #PersonalToolbar,
+:root[sizemode="fullscreen"] #TabsToolbar,
+:root[sizemode="fullscreen"] #nav-bar {
+	background-color: var(--body-background-color) !important;
+}
