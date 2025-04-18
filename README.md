@@ -10,7 +10,7 @@ Hi! I'm [d0sse](https://github.com/d0sse) and  this is Minimalist Mac - Safari-l
 - Light / Dark Version
 - Now with automatic system accent color! 🎨
 
-| Light Version* | Dark Version* |
+| Light Version | Dark Version |
 |---|---|
 |![Light Screenshot](screen-light.jpg "Screen")|![Dark Screenshot](screen-dark.jpg "Screen")|
 
