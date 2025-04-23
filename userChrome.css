@@ -6,7 +6,7 @@
 
 
 :root {
-	--accent: #385c61;
+	--accent: #922f99;
 	--bg-url-bar-color: rgba(0, 0, 0, 0.04);
 	--bg-url-bar-inactive-color: rgba(0, 0, 0, 0.15);
 	--toolbar-bgcolor: transparent !important;
@@ -66,6 +66,7 @@
 #titlebar {
 	background: -moz-mac-vibrancy-titlebar-light !important;
 	/* Native macOS wallpaper tinting */
+	appearance: -moz-mac-vibrancy-titlebar-light !important;
 	-moz-appearance: -moz-mac-vibrancy-titlebar-light !important;
 	transition: background 0.2s ease-in-out;
 }
