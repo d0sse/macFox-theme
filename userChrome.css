@@ -6,6 +6,7 @@
 
 
 :root {
+	--accent: #385c61;
 	--bg-url-bar-color: rgba(0, 0, 0, 0.04);
 	--bg-url-bar-inactive-color: rgba(0, 0, 0, 0.15);
 	--toolbar-bgcolor: transparent !important;
