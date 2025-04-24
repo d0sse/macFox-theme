@@ -8,6 +8,7 @@ Hi! I'm [d0sse](https://github.com/d0sse) and  this is Minimalist Mac - Safari-l
 
 - Simple
 - Light / Dark Version
+- Macos Tint Background color
 - Now with automatic system accent color! 🎨
 
 | Light Version | Dark Version |
