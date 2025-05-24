@@ -4,9 +4,33 @@
 }
 
 html.private {
-	--in-content-page-background: rgba(34, 34, 34, 1) !important;
+	--in-content-page-background: #363436 !important;
 }
 
 .search-inner-wrapper {
 	display: none !important;
+}
+
+@-moz-document url("about:home"), url("about:newtab") {
+	@media (prefers-color-scheme: light) {
+		body {
+			background-color: #ebeaeb !important;
+		}
+
+		:root:-moz-window-inactive body {
+			background-color: #e3e1e2 !important;
+			/* optional slightly different inactive tone */
+		}
+	}
+
+	@media (prefers-color-scheme: dark) {
+		body {
+			background-color: #363436 !important;
+		}
+
+		:root:-moz-window-inactive body {
+			background-color: #282527 !important;
+			/* optional slightly different inactive tone */
+		}
+	}
 }
