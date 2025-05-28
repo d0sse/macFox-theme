@@ -21,8 +21,8 @@
 	--background-color-secondary: rgba(191, 191, 191, 1);
 	--background-color-tertiary: rgba(252, 252, 252, 0.6);
 	--newtab-background-color: rgba(225, 225, 225, 1);
-	--body-background-color: #f1f0f2;
-	--body-background-color-inactive: #e5e4e5;
+	--body-background-color: #f4f0ef;
+	--body-background-color-inactive: #eae6e6;
 	--body-background-color-inactive-2: #e7e6e7;
 	--button-primary-bgcolor: AccentColor !important;
 }
@@ -31,8 +31,8 @@
 	:root {
 		--bg-url-bar-color: rgba(255, 255, 255, 0.08);
 		--bg-url-bar-inactive-color: rgba(255, 255, 255, 0.03);
-		--body-background-color: #2d2d2f;
-		--body-background-color-inactive: #252427;
+		--body-background-color: #403a3a;
+		--body-background-color-inactive: #342d2c;
 		--body-background-color-inactive-2: #262526;
 		--background-color-primary: rgba(38, 38, 38, 1);
 		--background-color-secondary: rgba(191, 191, 191, 1);

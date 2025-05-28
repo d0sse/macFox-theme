@@ -14,22 +14,22 @@ html.private {
 @-moz-document url("about:home"), url("about:newtab") {
 	@media (prefers-color-scheme: light) {
 		body {
-			background-color: #ebeaeb !important;
+			background-color: #f4f0ef !important;
 		}
 
 		:root:-moz-window-inactive body {
-			background-color: #e3e1e2 !important;
+			background-color: #eae6e6 !important;
 			/* optional slightly different inactive tone */
 		}
 	}
 
 	@media (prefers-color-scheme: dark) {
 		body {
-			background-color: #363436 !important;
+			background-color: #403a3a !important;
 		}
 
 		:root:-moz-window-inactive body {
-			background-color: #282527 !important;
+			background-color: #342d2c !important;
 			/* optional slightly different inactive tone */
 		}
 	}
