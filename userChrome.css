@@ -71,6 +71,10 @@
 	transition: background 0.2s ease-in-out;
 }
 
+#navigator-toolbox {
+	border-bottom: none !important;
+}
+
 /* Inactive Window Styles */
 :root:-moz-window-inactive #navigator-toolbox,
 :root:-moz-window-inactive #nav-bar,
