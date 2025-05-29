@@ -20,7 +20,6 @@
 	--background-color-primary: rgba(252, 252, 252, 1);
 	--background-color-secondary: rgba(191, 191, 191, 1);
 	--background-color-tertiary: rgba(252, 252, 252, 0.6);
-	--newtab-background-color: rgba(225, 225, 225, 1);
 	--body-background-color: #f4f0ef;
 	--body-background-color-inactive: #eae6e6;
 	--body-background-color-inactive-2: #e7e6e7;
@@ -53,8 +52,6 @@
 	/* Popup window hightlighted element colors */
 	--autocomplete-popup-highlight-background: var(--hover-color-tertiary) !important;
 	--autocomplete-popup-hover-background: var(--hover-color-primary) !important;
-	/* Empty page background color */
-	--tabpanel-background-color: var(--newtab-background-color) !important;
 	/* Button active color */
 	--button-active-bgcolor: var(--hover-color-tertiary) !important;
 }
