@@ -7,6 +7,8 @@
 
 :root {
 	--accent: #922f99;
+	--overlay-native: rgba(255, 255, 255, 0.06);
+	--overlay-native-inactive: rgba(255, 255, 255, 0.00);
 	--bg-url-bar-color: rgba(0, 0, 0, 0.04);
 	--bg-url-bar-inactive-color: rgba(0, 0, 0, 0.15);
 	--toolbar-bgcolor: transparent !important;
@@ -28,6 +30,8 @@
 
 @media (prefers-color-scheme: dark) {
 	:root {
+		--overlay-native: rgba(255, 255, 255, 0.06);
+		--overlay-native-inactive: rgba(255, 255, 255, 0.00);
 		--bg-url-bar-color: rgba(255, 255, 255, 0.08);
 		--bg-url-bar-inactive-color: rgba(255, 255, 255, 0.03);
 		--body-background-color: #403a3a;
@@ -134,4 +138,22 @@
 :root[sizemode="fullscreen"] #TabsToolbar,
 :root[sizemode="fullscreen"] #nav-bar {
 	background-color: var(--body-background-color) !important;
+}
+
+#browser {
+	background-color: var(--overlay-native) !important;
+}
+
+:root:-moz-window-inactive #browser {
+	background-color: var(--overlay-native-inactive) !important;
+	/* optional slightly different inactive tone */
+}
+
+#tabbrowser-tabbox,
+#tabbrowser-tabpanels,
+.browserContainer,
+.browserSidebarContainer,
+.browserStack,
+browser {
+	background-color: transparent !important;
 }
