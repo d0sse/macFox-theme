@@ -9,7 +9,7 @@
 
 	--accent: AccentColor;
 	--overlay-native: rgba(255, 255, 255, 0.06);
-	--overlay-native-inactive: rgba(0, 0, 0, 0.045);
+	--overlay-native-inactive: rgba(18, 18, 18, 0.045);
 	--bg-url-bar-color: rgba(0, 0, 0, 0.04);
 	--bg-url-bar-inactive-color: rgba(0, 0, 0, 0.15);
 	--toolbar-bgcolor: transparent !important;
@@ -31,7 +31,7 @@
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--overlay-native: rgba(251, 251, 251, 0.048);
+		--overlay-native: rgba(212, 222, 222, 0.07);
 		--overlay-native-inactive: rgba(255, 255, 255, 0.00);
 		--bg-url-bar-color: rgba(255, 255, 255, 0.08);
 		--bg-url-bar-inactive-color: rgba(255, 255, 255, 0.03);
