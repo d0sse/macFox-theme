@@ -4,7 +4,7 @@
 }
 
 html.private {
-	--in-content-page-background: #363436 !important;
+	--in-content-page-background: #363636 !important;
 }
 
 .search-inner-wrapper {
@@ -14,23 +14,13 @@ html.private {
 @-moz-document url("about:home"), url("about:newtab") {
 	@media (prefers-color-scheme: light) {
 		body {
-			background-color: #f4f0ef !important;
-		}
-
-		:root:-moz-window-inactive body {
-			background-color: #eae6e6 !important;
-			/* optional slightly different inactive tone */
+			background-color: transparent !important;
 		}
 	}
 
 	@media (prefers-color-scheme: dark) {
 		body {
-			background-color: #403a3a !important;
-		}
-
-		:root:-moz-window-inactive body {
-			background-color: #342d2c !important;
-			/* optional slightly different inactive tone */
+			background-color: transparent !important;
 		}
 	}
 }
