@@ -27,6 +27,7 @@ To start using MacFox, follow these steps:
     ```text
     toolkit.legacyUserProfileCustomizations.stylesheets
     svg.context-properties.content.enabled
+    browser.tabs.allow_transparent_browser
     layout.css.color-mix.enabled
     browser.theme.native-theme
     ```
