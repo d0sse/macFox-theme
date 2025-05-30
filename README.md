@@ -48,4 +48,6 @@ To start using MacFox, follow these steps:
 
 7. Restart Firefox to apply changes
 
+8. Apply `Blank Page` for New windows and new tabs.
+
 Enjoy 🎉
