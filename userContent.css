@@ -11,8 +11,7 @@ html.private {
 	display: none !important;
 }
 
-html,
-body {
+body.gm-popup {
 	background-color: #FEFEFE;
 }
 
