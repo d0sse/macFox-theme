@@ -22,6 +22,7 @@
 	--background-color-secondary: rgba(191, 191, 191, 1);
 	--background-color-tertiary: rgba(252, 252, 252, 0.6);
 	--button-primary-bgcolor: AccentColor !important;
+	--fullscreen-color: #fafafa;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -32,6 +33,7 @@
 		--background-color-secondary: rgba(191, 191, 191, 1);
 		--background-color-tertiary: rgba(252, 252, 252, 0.6);
 		--tint-color-primary: rgba(231, 231, 231, 1);
+		--fullscreen-color: #2a2a2a;
 	}
 }
 
@@ -128,9 +130,7 @@
 :root[sizemode="fullscreen"] #PersonalToolbar,
 :root[sizemode="fullscreen"] #TabsToolbar,
 :root[sizemode="fullscreen"] #nav-bar {
-	background-color: -moz-dialog;
-	-moz-default-appearance: -moz-window-titlebar;
-	appearance: auto;
+	background-color: var(--fullscreen-color) !important;
 }
 
 #browser {
