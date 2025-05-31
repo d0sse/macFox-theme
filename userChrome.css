@@ -31,7 +31,7 @@
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--overlay-native: rgba(212, 222, 222, 0.07);
+		--overlay-native: rgba(255, 255, 255, 0.059);
 		--overlay-native-inactive: rgba(255, 255, 255, 0.00);
 		--bg-url-bar-color: rgba(255, 255, 255, 0.08);
 		--bg-url-bar-inactive-color: rgba(255, 255, 255, 0.03);
