@@ -8,8 +8,6 @@
 :root {
 
 	--accent: AccentColor;
-	--overlay-native: rgba(255, 255, 255, 0.06);
-	--overlay-native-inactive: rgba(18, 18, 18, 0.045);
 	--bg-url-bar-color: rgba(0, 0, 0, 0.04);
 	--bg-url-bar-inactive-color: rgba(0, 0, 0, 0.15);
 	--toolbar-bgcolor: transparent !important;
@@ -23,21 +21,13 @@
 	--background-color-primary: rgba(252, 252, 252, 1);
 	--background-color-secondary: rgba(191, 191, 191, 1);
 	--background-color-tertiary: rgba(252, 252, 252, 0.6);
-	--body-background-color: #f4f0ef;
-	--body-background-color-inactive: #eae6e6;
-	--body-background-color-inactive-2: #e7e6e7;
 	--button-primary-bgcolor: AccentColor !important;
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--overlay-native: rgba(255, 255, 255, 0.059);
-		--overlay-native-inactive: rgba(255, 255, 255, 0.00);
 		--bg-url-bar-color: rgba(255, 255, 255, 0.08);
 		--bg-url-bar-inactive-color: rgba(255, 255, 255, 0.03);
-		--body-background-color: #403a3a;
-		--body-background-color-inactive: #342d2c;
-		--body-background-color-inactive-2: #262526;
 		--background-color-primary: rgba(38, 38, 38, 1);
 		--background-color-secondary: rgba(191, 191, 191, 1);
 		--background-color-tertiary: rgba(252, 252, 252, 0.6);
@@ -138,16 +128,14 @@
 :root[sizemode="fullscreen"] #PersonalToolbar,
 :root[sizemode="fullscreen"] #TabsToolbar,
 :root[sizemode="fullscreen"] #nav-bar {
-	background-color: var(--body-background-color) !important;
+	background-color: -moz-dialog;
+	-moz-default-appearance: -moz-window-titlebar;
+	appearance: auto;
 }
 
 #browser {
-	background-color: var(--overlay-native) !important;
-}
-
-:root:-moz-window-inactive #browser {
-	background-color: var(--overlay-native-inactive) !important;
-	/* optional slightly different inactive tone */
+	-moz-default-appearance: -moz-window-titlebar;
+	appearance: auto;
 }
 
 #tabbrowser-tabbox,
