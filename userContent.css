@@ -11,14 +11,36 @@ html.private {
 	display: none !important;
 }
 
-@-moz-document url("about:home"), url("about:newtab") {
+html,
+body {
+	background-color: #FEFEFE;
+}
+
+@media (prefers-color-scheme: light) {
+	body.neterror {
+		background-color: transparent !important;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	body.neterror {
+		background-color: transparent !important;
+	}
+}
+
+
+@-moz-document url("about:home"), url("about:newtab"), url("about:blank") {
 	@media (prefers-color-scheme: light) {
+
+		html,
 		body {
 			background-color: transparent !important;
 		}
 	}
 
 	@media (prefers-color-scheme: dark) {
+
+		html,
 		body {
 			background-color: transparent !important;
 		}
