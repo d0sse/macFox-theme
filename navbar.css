@@ -13,11 +13,6 @@
 	background-color: transparent !important;
 }
 
-#navigator-toolbox:not([inFullscreen]) {
-	/* Not fully transparent value fixes url highlight color in dark mode */
-	background-color: rgba(0, 0, 0, 0.01) !important;
-}
-
 #navigator-toolbox[inFullscreen] {
 	background-color: var(--background-color-primary) !important;
 }

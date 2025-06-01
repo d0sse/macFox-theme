@@ -134,6 +134,7 @@
 }
 
 #browser {
+	transition: background 0.2s ease-in-out;
 	-moz-default-appearance: -moz-window-titlebar;
 	appearance: auto;
 }
