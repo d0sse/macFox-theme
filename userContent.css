@@ -3,6 +3,14 @@
 	display: none !important;
 }
 
+.site-wrapper {
+	background-color: transparent !important;
+}
+
+html.has-zcm.js.no-touch.opacity.csstransforms3d.csstransitions.svg.cssfilters.is-not-mobile-device.no-ads.react.has-footer.has-right-rail-module.full-urls.breadcrumb-urls.set-text--larger body.body--serp div.site-wrapper.js-site-wrapper div#header_wrapper.header-wrap.js-header-wrap.ai-header-exp.ready {
+	background-color: transparent !important;
+}
+
 html.private {
 	--in-content-page-background: #323233 !important;
 }
@@ -45,3 +53,5 @@ body.gm-popup {
 		}
 	}
 }
+
+@-moz-document domain("duckduckgo.com") {}
