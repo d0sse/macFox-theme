@@ -21,7 +21,7 @@ Hi! I'm [d0sse](https://github.com/d0sse) and this is Minimalist Mac - Safari-li
 
 To start using MacFox, follow these steps:
 
-1. Go to the following url address about:config
+1. Go to the following url address `about:config`.
 2. Ensure the following properties are set to true:
 
     ```text
@@ -32,8 +32,8 @@ To start using MacFox, follow these steps:
     browser.theme.native-theme
     ```
 
-3. Go to the following url address about:support
-4. Find "Profile Folder" section in the "Application Basics" list and copy the path (defined below as `$path`)
+3. Go to the following url address `about:support`.
+4. Find "Profile Folder" section in the "Application Basics" list and copy the path (defined below as `$path`).
 5. Open `terminal.app` and type:
 
     ```bash
