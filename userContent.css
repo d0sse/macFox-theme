@@ -7,6 +7,10 @@ html.private {
 	--in-content-page-background: #323233 !important;
 }
 
+html.private>body {
+	background-color: transparent !important;
+}
+
 .search-inner-wrapper {
 	display: none !important;
 }
