@@ -36,7 +36,7 @@ body.gm-popup {
 }
 
 
-@-moz-document url("about:home"), url("about:newtab"), url("about:blank"), url("about:preferences"), url("about:url-classifier"), url("about:config"), url("about:cache"), url("about:support"), url("about:logins") {
+@-moz-document url("about:home"), url("about:addons"), url("about:newtab"), url("about:blank"), url("about:preferences"), url("about:url-classifier"), url("about:config"), url("about:cache"), url("about:support"), url("about:logins") {
 	body {
 		background-color: transparent !important;
 	}
