@@ -46,7 +46,7 @@ To start using MacFox, follow these steps:
     git clone git@github.com:d0sse/macFox-theme.git chrome
     ```
 
-7. Apply `Firefox Home` for New windows and new tabs.
+7. Apply `about blank` for New windows and new tabs.
 
 8. Restart Firefox to apply changes.
 
