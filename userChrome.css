@@ -147,3 +147,9 @@
 browser {
 	background-color: transparent !important;
 }
+
+#urlbar-searchmode-switcher {
+	margin: 2px !important;
+	border-radius: 5px !important;
+	opacity: 0.8;
+}
