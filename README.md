@@ -4,6 +4,8 @@
 
 Hi! I'm [d0sse](https://github.com/d0sse) and this is Minimalist Mac - Safari-like - Firefox theme.
 
+> **UPDATED FOR FIREFOX 141**
+
 ## Features
 
 - Simple
@@ -22,7 +24,7 @@ Hi! I'm [d0sse](https://github.com/d0sse) and this is Minimalist Mac - Safari-li
 To start using MacFox, follow these steps:
 
 1. Go to the following url address `about:config`.
-2. Ensure the following properties are set to true:
+2. Ensure the following properties are set to `true`:
 
     ```text
     toolkit.legacyUserProfileCustomizations.stylesheets
@@ -50,4 +52,10 @@ To start using MacFox, follow these steps:
 
 8. Restart Firefox to apply changes.
 
-Enjoy 🎉
+9. If you want enable macOS traslucent windows set to `true`:
+
+    ```text
+    widget.macos.titlebar-blend-mode.behind-window
+    ```
+
+### Enjoy 🎉
