@@ -148,9 +148,19 @@ browser {
 	background-color: transparent !important;
 }
 
-#urlbar-searchmode-switcher,
-.urlbar-page-action:hoover,
+.urlbar-page-action:hoover {
+	margin: 3px !important;
+	border-radius: 6px !important;
+	opacity: 0.7;
+}
+
 #identity-box:hoover {
+	margin: 3px !important;
+	border-radius: 6px !important;
+	opacity: 0.7;
+}
+
+#urlbar-searchmode-switcher {
 	margin: 3px !important;
 	border-radius: 6px !important;
 	opacity: 0.7;
