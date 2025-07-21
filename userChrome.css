@@ -148,7 +148,9 @@ browser {
 	background-color: transparent !important;
 }
 
-#urlbar-searchmode-switcher {
+#urlbar-searchmode-switcher,
+.urlbar-page-action:hoover,
+#identity-box:hoover {
 	margin: 3px !important;
 	border-radius: 6px !important;
 	opacity: 0.7;
