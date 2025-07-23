@@ -148,16 +148,14 @@ browser {
 	background-color: transparent !important;
 }
 
-.urlbar-page-action:hoover {
-	margin: 3px !important;
+.urlbar-page-action {
+	margin: 2px !important;
 	border-radius: 6px !important;
-	opacity: 0.7;
 }
 
-#identity-box:hoover {
-	margin: 3px !important;
+.identity-box-button {
+	margin: 2px !important;
 	border-radius: 6px !important;
-	opacity: 0.7;
 }
 
 #urlbar-searchmode-switcher {
