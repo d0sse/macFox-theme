@@ -17,6 +17,10 @@ Hi! I'm [d0sse](https://github.com/d0sse) and this is Minimalist Mac - Safari-li
 |---|---|
 |![Light Screenshot](screen-light.jpg "Screen")|![Dark Screenshot](screen-dark.jpg "Screen")|
 
+| Light Transparent Version | Dark Transparent Version |
+|---|---|
+|![Light Screenshot](screen-light-transparent.jpg "Screen")|![Dark Screenshot](screen-dark-transparent.jpg "Screen")|
+
 > **WARNING**: Tested Only on macOS!
 
 ### How to install
