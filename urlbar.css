@@ -81,8 +81,7 @@
 	background-color: var(--hover-color-primary) !important;
 }
 
-#tracking-protection-icon-container,
-#notification-popup-box {
+#tracking-protection-icon-container {
 	display: none;
 }
 
