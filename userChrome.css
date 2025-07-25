@@ -151,15 +151,38 @@ browser {
 .urlbar-page-action {
 	margin: 2px !important;
 	border-radius: 6px !important;
+	opacity: 0.3;
+}
+
+.urlbar-page-action:hover {
+	margin: 2px !important;
+	opacity: 1.0;
+}
+
+#notification-popup-box {
+	opacity: 0.3;
+}
+
+#notification-popup-box:hover {
+	opacity: 1.0;
 }
 
 .identity-box-button {
 	margin: 2px !important;
 	border-radius: 6px !important;
+	opacity: 0.3;
+}
+
+.identity-box-button:hover {
+	opacity: 1.0;
 }
 
 #urlbar-searchmode-switcher {
 	margin: 3px !important;
 	border-radius: 6px !important;
+	opacity: 0.3;
+}
+
+#urlbar-searchmode-switcher:hover {
 	opacity: 0.7;
 }
