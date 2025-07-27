@@ -25,13 +25,13 @@ body.gm-popup {
 
 @media (prefers-color-scheme: light) {
 	body.neterror {
-		background-color: transparent !important;
+		background-color: white !important;
 	}
 }
 
 @media (prefers-color-scheme: dark) {
 	body.neterror {
-		background-color: transparent !important;
+		background-color: var(--in-content-page-background) !important;
 	}
 }
 
