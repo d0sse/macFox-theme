@@ -1,4 +1,4 @@
-# 👋 Welcome to MacFox-Theme
+# 👋 Welcome to MacFox-Theme 🖥️🦊
 
 ## Safari like, minimalistic theme
 
