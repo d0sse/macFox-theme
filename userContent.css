@@ -15,72 +15,39 @@ html.private>body {
 	display: none !important;
 }
 
-body {
-	background-color: white;
-}
-
 body.gm-popup {
 	background-color: #FEFEFE;
 }
 
+body {
+	background-color: #FEFEFE;
+}
+
 @media (prefers-color-scheme: light) {
-	body.neterror {
+	body {
+		background-color: #FEFEFE;
+	}
+
+	body.neterror,
+	body#viewsource {
 		background-color: white !important;
 	}
 }
 
 @media (prefers-color-scheme: dark) {
-	body.neterror {
-		background-color: var(--in-content-page-background) !important;
+	body {
+		background-color: #323233;
+		color: white;
+	}
+
+	body.neterror,
+	body#viewsource {
+		background-color: #323233 !important;
 	}
 }
 
 
-@-moz-document url("about:about"),
-url("about:addons"),
-url("about:buildconfig"),
-url("about:cache"),
-url("about:certificate"),
-url("about:checkerboard"),
-url("about:compat"),
-url("about:config"),
-url("about:crashes"),
-url("about:credits"),
-url("about:debugging"),
-url("about:deleteprofile"),
-url("about:downloads"),
-url("about:editprofile"),
-url("about:home"),
-url("about:license"),
-url("about:logging"),
-url("about:logins"),
-url("about:loginsimportreport"),
-url("about:logo"),
-url("about:memory"),
-url("about:mozilla"),
-url("about:networking"),
-url("about:newprofile"),
-url("about:newtab"),
-url("about:policies"),
-url("about:preferences"),
-url("about:privatebrowsing"),
-url("about:processes"),
-url("about:profiles"),
-url("about:profiling"),
-url("about:protections"),
-url("about:rights"),
-url("about:robots"),
-url("about:serviceworkers"),
-url("about:studies"),
-url("about:support"),
-url("about:sync-log"),
-url("about:telemetry"),
-url("about:unloads"),
-url("about:url-classifier"),
-url("about:webauthn"),
-url("about:webrtc"),
-url("about:welcome"),
-url("about:blank") {
+@-moz-document url-prefix("about:") {
 	body {
 		background-color: transparent !important;
 	}
