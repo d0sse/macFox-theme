@@ -45,3 +45,7 @@ body:has(.tabbrowser-tab):not(:has(#vertical-tabs .tabbrowser-tab)) .tabbrowser-
 #vertical-tabs {
   padding: 0 2px !important;
 }
+
+body:has(#vertical-tabs #tabs-newtab-button) #tabs-newtab-button {
+  margin-top: 4px !important;
+}
