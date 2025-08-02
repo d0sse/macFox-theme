@@ -38,6 +38,10 @@
 	width: 15px !important;
 }
 
-.tabbrowser-tab {
-	padding-inline: 4px !important;
+body:has(.tabbrowser-tab):not(:has(#vertical-tabs .tabbrowser-tab)) .tabbrowser-tab {
+  padding-inline: 4px !important;
+}
+
+#vertical-tabs {
+  padding: 0 2px !important;
 }
