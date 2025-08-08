@@ -38,28 +38,28 @@ To start using MacFox, follow these steps:
     browser.theme.native-theme
     ```
 
-3. Go to the following url address `about:support`.
-4. Find "Profile Folder" section in the "Application Basics" list and copy the path (defined below as `$path`).
-5. Open `terminal.app` and type:
+3. If you want enable macOS traslucent windows set to `true`:
+
+    ```text
+    widget.macos.titlebar-blend-mode.behind-window
+    ```
+
+4. Go to the following url address `about:support`.
+5. Find "Profile Folder" section in the "Application Basics" list and copy the path (defined below as `$path`).
+6. Open `terminal.app` and type:
 
     ```bash
     cd $path
     ```
 
-6. Type in the following command:
+7. Type in the following command:
 
     ```bash
     git clone git@github.com:d0sse/macFox-theme.git chrome
     ```
 
-7. Apply `about blank` for New windows and new tabs.
+8. Apply `about blank` for New windows and new tabs.
 
-8. Restart Firefox to apply changes.
-
-9. If you want enable macOS traslucent windows set to `true`:
-
-    ```text
-    widget.macos.titlebar-blend-mode.behind-window
-    ```
+9. Restart Firefox to apply changes.
 
 ### Enjoy 🎉
