@@ -186,3 +186,18 @@ browser {
 #urlbar-searchmode-switcher:hover {
 	opacity: 0.7;
 }
+
+.toolbar-items {
+	padding-right: 6px;
+}
+
+#tabbrowser-tabbox[sidebar-shown=""] {
+	margin: 0 8px 8px 0 !important;
+	border-radius: 8px !important;
+	overflow: hidden;
+}
+
+#tabbrowser-tabbox:not([sidebar-shown=""]) {
+	margin: 0 !important;
+	border-radius: 0 !important;
+}
