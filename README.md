@@ -62,4 +62,14 @@ To start using MacFox, follow these steps:
 
 9. Restart Firefox to apply changes.
 
+## Privacy & Telemetry
+
+For complete instructions on disabling all Firefox telemetry, pings, and communications to Mozilla servers, see:
+
+➡️ [TELEMETRY.md](TELEMETRY.md)
+
+Recommended Extensions
+
+➡️ [EXTENSIONS.md](EXTENSIONS.md)
+
 ### Enjoy 🎉
