@@ -1,8 +1,5 @@
 # Firefox Manual Telemetry & Mozilla Communication Disable List
 
-Set each preference manually in **`about:config`**  
-or enforce via **Enterprise Policies** → `Preferences`.
-
 ---
 
 ## 1. Core Telemetry
@@ -70,10 +67,3 @@ Block the following domains at DNS or firewall level:
 - `snippets.cdn.mozilla.net`
 
 ---
-
-## 7. Verification
-
-1. Restart Firefox.  
-2. Check `about:policies` → **Active** for “DisableTelemetry” (if using policies).  
-3. Monitor network logs — no traffic to Mozilla telemetry or Normandy endpoints should appear.  
-4. Verify `telemetry-pings` folder in your profile is empty or inactive.
