@@ -11,6 +11,10 @@ html.private>body {
 	background-color: transparent !important;
 }
 
+html.b_firefox {
+	background-color: #FEFEFE;
+}
+
 .search-inner-wrapper {
 	display: none !important;
 }
