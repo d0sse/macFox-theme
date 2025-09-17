@@ -1,0 +1,44 @@
+
+.vscode
+_ide_helper.php
+.env
+.phpstorm.meta.php
+.phpunit.result.cache
+npm-debug.log
+yarn-error.loc
+composer.lock
+package-lock.json
+*.sublime-workspace
+*.sublime-project
+sftp-config.json
+/bootstrap/cache/*.php
+.editorconfig
+## MACOS Crapware
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.vscode/settings.json
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+
+AGENTS.md
