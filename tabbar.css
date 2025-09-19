@@ -16,9 +16,17 @@
 .tab-background {
 	background-color: var(--tab-color);
 	background-image: none !important;
-	border-radius: 6px !important;
+	border-radius: var(--border-circle) !important;
 	outline: none !important;
 	box-shadow: none !important;
+}
+
+.toolbarbutton-1 image {
+	border-radius: var(--border-circle) !important;
+}
+
+.tab-close-button {
+	border-radius: var(--border-circle) !important;
 }
 
 .tabbrowser-tab:hover:not([selected]):not([multiselected]) .tab-background {
@@ -39,13 +47,13 @@
 }
 
 body:has(.tabbrowser-tab):not(:has(#vertical-tabs .tabbrowser-tab)) .tabbrowser-tab {
-  padding-inline: 4px !important;
+	padding-inline: 4px !important;
 }
 
 #vertical-tabs {
-  padding: 0 2px !important;
+	padding: 0 2px !important;
 }
 
 body:has(#vertical-tabs #tabs-newtab-button) #tabs-newtab-button {
-  margin-top: 4px !important;
+	margin-top: 4px !important;
 }

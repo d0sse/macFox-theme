@@ -27,11 +27,13 @@
 #urlbar[open] {
 	border-radius: 12px !important;
 	box-shadow: 0px 2px 20px rgba(4, 2, 5, 0.2) !important;
+	border-radius: var(--border-circle) !important;
 }
 
 /* Centers text in urlbar */
 #urlbar:not([focused]) #urlbar-input {
 	text-align: center !important;
+	border-radius: var(--border-circle) !important;
 }
 
 /* Urlbar icons look */
@@ -53,9 +55,9 @@
 	transform: scale(0.9, 0.9) !important;
 }
 
-#urlbar-background {
+.urlbar-background {
 	border-color: var(--url-border-color) !important;
-	border-radius: 8px !important;
+	border-radius: var(--border-circle) !important;
 	box-shadow: none !important;
 	outline-width: 2px !important;
 	outline-color: var(--url-bar-outline-color) !important;
@@ -65,11 +67,11 @@
 	color: var(--url-placeholder-color) !important;
 }
 
-#urlbar:not([open]) #urlbar-background {
+#urlbar:not([open]) .urlbar-background {
 	background-color: var(--url-bar-background-color) !important;
 }
 
-#urlbar[open] #urlbar-background {
+#urlbar[open] .urlbar-background {
 	border-radius: 10px !important;
 	border-color: var(--hover-color-tertiary) !important;
 }
@@ -95,4 +97,18 @@
 
 #star-button[starred="true"] {
 	fill: AccentColor !important;
+}
+
+#urlbar-searchmode-switcher {
+	background-color: transparent !important;
+}
+
+.identity-box-button,
+.urlbar-page-action {
+	border-radius: var(--border-circle) !important;
+}
+
+.urlbar-revert-button {
+	margin-right: 4px;
+	border-radius: var(--border-circle) !important;
 }
