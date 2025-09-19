@@ -52,11 +52,13 @@
 :root:-moz-window-inactive #navigator-toolbox,
 :root:-moz-window-inactive #nav-bar,
 :root:-moz-window-inactive #TabsToolbar,
-:root:-moz-window-inactive #titlebar {
+:root:-moz-window-inactive #titlebar,
+:root:-moz-window-inactive browser {
     background: -moz-mac-vibrancy-underlay !important;
     /* Slightly desaturated tint */
     -moz-appearance: -moz-mac-vibrancy-dark !important;
     opacity: 0.9;
+    transition: background 0.2s ease-in-out;
 }
 
 /* Optional: Make the URL bar blend better */
@@ -105,7 +107,7 @@
 :root[sizemode="fullscreen"] #PersonalToolbar,
 :root[sizemode="fullscreen"] #TabsToolbar,
 :root[sizemode="fullscreen"] #nav-bar {
-    background-color: var(--fullscreen-color) !important;
+    background-color: var(--toolbar-bgcolor, var(--fullscreen-color)) !important;
 }
 
 #browser {
