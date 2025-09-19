@@ -31,7 +31,7 @@ Hi! I'm [d0sse](https://github.com/d0sse) and this is Minimalist Mac - Safari-li
 > **WARNING**
 > Tested Only on macOS!
 ---
-> This theme is now **compatible with [Adaptive Tab Bar Color (ATBC)](https://github.com/aqsalose/Adaptive-Tab-Bar-Color)**.  
+> This theme is now **compatible with [Adaptive Tab Bar Color (ATBC)](https://github.com/easonwong-de/Adaptive-Tab-Bar-Colour)**.  
 
 ### How to install
 
