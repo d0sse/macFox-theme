@@ -24,7 +24,7 @@
 }
 
 #urlbar[open] {
-	border-radius: 20px !important;
+	border-radius: var(--border-big) !important;
 	box-shadow: 0px 2px 20px rgba(4, 2, 5, 0.2) !important;
 }
 
@@ -69,9 +69,10 @@
 	background-color: var(--url-bar-background-color) !important;
 }
 
+
 #urlbar[open] .urlbar-background {
 	background-color: initial;
-	border-radius: 20px !important;
+	border-radius: var(--border-big) !important;
 	border-color: var(--url-border-color) !important;
 }
 
@@ -113,5 +114,5 @@
 }
 
 #urlbar[open] .urlbarView-row {
-	border-radius: 16px !important;
+	border-radius: var(--border-big-2) !important;
 }
