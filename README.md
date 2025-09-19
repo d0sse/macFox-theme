@@ -1,10 +1,12 @@
 # 👋 Welcome to MacFox-Theme 🖥️🦊
 
+### Now updated for Tahoe UI
+
 ## Safari like, minimalistic theme
 
 Hi! I'm [d0sse](https://github.com/d0sse) and this is Minimalist Mac - Safari-like - Firefox theme.
 
-> 🚀 **UPDATED FOR FIREFOX 141**
+> 🚀 **UPDATED FOR FIREFOX 143**
 
 ## Features
 
@@ -12,6 +14,7 @@ Hi! I'm [d0sse](https://github.com/d0sse) and this is Minimalist Mac - Safari-li
 - Light / Dark Version
 - macOS Tint Background color
 - Now with automatic system macOS accent color! 🎨
+- 🎀 Compatible with [The Adaptive Tab Bar Color (ATBC)](https://github.com/easonwong-de/Adaptive-Tab-Bar-Colour)
 
 | Light Version | Dark Version |
 |---|---|
@@ -21,7 +24,14 @@ Hi! I'm [d0sse](https://github.com/d0sse) and this is Minimalist Mac - Safari-li
 |---|---|
 |![Light Screenshot](screen-light-transparent.jpg "Screen")|![Dark Screenshot](screen-dark-transparent.jpg "Screen")|
 
-> **WARNING**: Tested Only on macOS!
+| Tahoe Light Transparent Version | Tahoe Dark Transparent Version |
+|---|---|
+|![Light Screenshot](screen-light-tahoe.jpg "Screen")|![Dark Screenshot](screen-dark-tahoe.jpg "Screen")|
+
+> **WARNING**
+> Tested Only on macOS!
+---
+> This theme is now **compatible with [Adaptive Tab Bar Color (ATBC)](https://github.com/aqsalose/Adaptive-Tab-Bar-Color)**.  
 
 ### How to install
 
@@ -38,29 +48,35 @@ To start using MacFox, follow these steps:
     browser.theme.native-theme
     ```
 
-3. If you want enable macOS traslucent windows set to `true`:
+3. If you want to enable the new UI for the closest match to Apple's macOS Tahoe design language, set this pref to `true`:
+
+     ```text
+    userChrome.tahoeUI.enabled
+    ```
+
+4. If you want enable macOS traslucent windows set to `true`:
 
     ```text
     widget.macos.titlebar-blend-mode.behind-window
     ```
 
-4. Go to the following url address `about:support`.
-5. Find "Profile Folder" section in the "Application Basics" list and copy the path (defined below as `$path`).
-6. Open `terminal.app` and type:
+5. Go to the following url address `about:support`.
+6. Find "Profile Folder" section in the "Application Basics" list and copy the path (defined below as `$path`).
+7. Open `terminal.app` and type:
 
     ```bash
     cd $path
     ```
 
-7. Type in the following command:
+8. Type in the following command:
 
     ```bash
     git clone git@github.com:d0sse/macFox-theme.git chrome
     ```
 
-8. Apply `about blank` for New windows and new tabs.
+9. Apply `about blank` for New windows and new tabs.
 
-9. Restart Firefox to apply changes.
+10. Restart Firefox to apply changes.
 
 ## Privacy & Telemetry
 
