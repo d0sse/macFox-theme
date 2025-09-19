@@ -6,52 +6,27 @@
 
 
 :root {
-
     --accent: AccentColor;
-    --bg-url-bar-color: rgba(0, 0, 0, 0.04);
-    --bg-url-bar-inactive-color: rgba(0, 0, 0, 0.15);
-    --toolbar-bgcolor: transparent !important;
-    --toolbar-field-background-color: transparent !important;
     --lwt-accent-color: AccentColor;
     --tab-loading-fill: AccentColor !important;
-    --hover-color-primary: rgba(0, 0, 0, 0.07);
-    --hover-color-secondary: rgba(0, 0, 0, 0.05);
-    --hover-color-tertiary: rgba(0, 0, 0, 0.2);
-    --tint-color-primary: rgba(97, 97, 97, 1);
-    --background-color-primary: rgba(252, 252, 252, 1);
-    --background-color-secondary: rgba(191, 191, 191, 1);
-    --background-color-tertiary: rgba(252, 252, 252, 0.6);
     --button-primary-bgcolor: AccentColor !important;
-    --fullscreen-color: #fafafa;
     --border-circle: 99px;
+    --tab-min-height: 32px !important;
+    --tab-min-width: 66px !important;
+    --fullscreen-color: #fafafa;
+    --urlbar-solid-bg: #f2f2f2;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg-url-bar-color: rgba(255, 255, 255, 0.08);
-        --bg-url-bar-inactive-color: rgba(255, 255, 255, 0.03);
-        --background-color-primary: rgba(38, 38, 38, 1);
-        --background-color-secondary: rgba(191, 191, 191, 1);
-        --background-color-tertiary: rgba(252, 252, 252, 0.6);
-        --tint-color-primary: rgba(231, 231, 231, 1);
         --fullscreen-color: #2a2a2a;
+        --urlbar-solid-bg: #2b2b2b;
     }
 }
 
+/* If Firefox/ATBC provides a dynamic color, override the fallback */
 :root {
-
-    --tab-min-height: 32px !important;
-    /* adjust to suit your needs */
-    --tab-min-width: 66px !important;
-    /* adjust to suit your needs */
-    /* Popup window background color */
-    --toolbar-field-focus-background-color: var(--background-color-primary) !important;
-    --arrowpanel-background: var(--background-color-primary) !important;
-    /* Popup window hightlighted element colors */
-    --autocomplete-popup-highlight-background: var(--hover-color-tertiary) !important;
-    --autocomplete-popup-hover-background: var(--hover-color-primary) !important;
-    /* Button active color */
-    --button-active-bgcolor: var(--hover-color-tertiary) !important;
+    --urlbar-solid-bg: var(--toolbar-field-background-color, var(--urlbar-solid-bg));
 }
 
 /* Active Window Styles */
@@ -84,13 +59,10 @@
 /* Optional: Make the URL bar blend better */
 #urlbar {
     border-radius: var(--border-circle) !important;
-    background: var(--bg-url-bar-color) !important;
     backdrop-filter: blur(20px) !important;
 }
 
-:root:-moz-window-inactive #urlbar {
-    background: var(--bg-url-bar-inactive-color) !important;
-}
+
 
 #TabsToolbar .titlebar-buttonbox-container {
     margin-left: 6px !important;
@@ -204,4 +176,22 @@ browser {
 #tabbrowser-tabbox:not([sidebar-shown=""]) {
     margin: 0 !important;
     border-radius: 0 !important;
+}
+
+:root {
+    --urlbar-base-color: var(--toolbar-bgcolor);
+    --urlbar-overlay-active: color-mix(in srgb, var(--toolbar-color) 5%, transparent);
+    --urlbar-overlay-non-active: color-mix(in srgb, var(--toolbar-color) 9%, transparent);
+}
+
+/* Inactive/default state */
+#urlbar {
+    background-color: var(--urlbar-overlay-active) !important;
+    transition: background-color 0.2s ease;
+}
+
+
+
+:root:-moz-window-inactive #urlbar {
+    background: var(--urlbar-overlay-non-active) !important;
 }

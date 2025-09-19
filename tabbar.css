@@ -1,15 +1,16 @@
 :root {
-	--tab-color: rgba(0, 0, 0, 0.05);
-	--tab-hover-color: rgba(0, 0, 0, 0.12);
-	--tab-active-color: rgba(0, 0, 0, 0.18);
-}
+	/* Base color is always whatever the theme/extension gives us */
+	--tab-base-color: var(--toolbar-bgcolor);
 
-@media (prefers-color-scheme: dark) {
-	:root {
-		--tab-color: rgba(255, 255, 255, 0.05);
-		--tab-hover-color: rgba(255, 255, 255, 0.12);
-		--tab-active-color: rgba(255, 255, 255, 0.18);
-	}
+	/* Overlays = transparent black or white depending on text contrast */
+	--tab-overlay-neutral: color-mix(in srgb, var(--toolbar-color) 5%, transparent);
+	--tab-overlay-hover: color-mix(in srgb, var(--toolbar-color) 25%, transparent);
+	--tab-overlay-active: color-mix(in srgb, var(--toolbar-color) 20%, transparent);
+
+	/* Final colors you can use */
+	--tab-color: var(--tab-overlay-neutral);
+	--tab-hover-color: var(--tab-overlay-hover);
+	--tab-active-color: var(--tab-overlay-active);
 }
 
 /* Sets tab appearance */

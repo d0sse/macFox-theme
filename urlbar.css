@@ -1,18 +1,17 @@
 :root {
 	--url-border-color: rgba(0, 0, 0, 0.15);
 	--url-placeholder-color: rgba(0, 0, 0, 0.5);
-	--url-bar-background-color: rgba(255, 255, 255, 0.4);
 	--url-bar-outline-color: AccentColor;
+	--toolbar-field-focus-color: AccentColor;
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
 		--url-border-color: rgba(255, 255, 255, 0.15);
 		--url-placeholder-color: rgba(255, 255, 255, 0.5);
-		--url-bar-background-color: rgba(0, 0, 0, 0.4);
-		--url-bar-outline-color: AccentColor;
 	}
 }
+
 
 #urlbar-container {
 	max-width: 50% !important;
@@ -25,15 +24,13 @@
 }
 
 #urlbar[open] {
-	border-radius: 12px !important;
+	border-radius: 20px !important;
 	box-shadow: 0px 2px 20px rgba(4, 2, 5, 0.2) !important;
-	border-radius: var(--border-circle) !important;
 }
 
 /* Centers text in urlbar */
 #urlbar:not([focused]) #urlbar-input {
 	text-align: center !important;
-	border-radius: var(--border-circle) !important;
 }
 
 /* Urlbar icons look */
@@ -56,6 +53,7 @@
 }
 
 .urlbar-background {
+	/* Solid background from ATBC or theme */
 	border-color: var(--url-border-color) !important;
 	border-radius: var(--border-circle) !important;
 	box-shadow: none !important;
@@ -72,8 +70,9 @@
 }
 
 #urlbar[open] .urlbar-background {
-	border-radius: 10px !important;
-	border-color: var(--hover-color-tertiary) !important;
+	background-color: initial;
+	border-radius: 20px !important;
+	border-color: var(--url-border-color) !important;
 }
 
 /* Urlbar mode indicator look */
@@ -111,4 +110,8 @@
 .urlbar-revert-button {
 	margin-right: 4px;
 	border-radius: var(--border-circle) !important;
+}
+
+#urlbar[open] .urlbarView-row {
+	border-radius: 16px !important;
 }
