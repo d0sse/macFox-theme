@@ -185,7 +185,7 @@ browser {
 
 #tabbrowser-tabbox[sidebar-shown=""] {
     margin: 0 8px 8px 0 !important;
-    border-radius: var(--border-circle) !important;
+    border-radius: var(--border-big-2) !important;
     overflow: hidden;
 }
 

@@ -57,4 +57,5 @@ body:has(.tabbrowser-tab):not(:has(#vertical-tabs .tabbrowser-tab)) .tabbrowser-
 
 body:has(#vertical-tabs #tabs-newtab-button) #tabs-newtab-button {
 	margin-top: 4px !important;
+	border-radius: var(--border-circle) !important;
 }
