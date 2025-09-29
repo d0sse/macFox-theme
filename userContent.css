@@ -19,10 +19,6 @@ html.b_firefox {
 	display: none !important;
 }
 
-body.gm-popup {
-	background-color: #FEFEFE;
-}
-
 body {
 	background-color: #FEFEFE;
 }
@@ -49,6 +45,10 @@ body {
 	}
 }
 
+body.gm-popup,
+body.pageCharlie {
+	background-color: #FEFEFE !important;
+}
 
 @-moz-document url-prefix("about:") {
 	body {
