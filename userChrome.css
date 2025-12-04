@@ -203,3 +203,7 @@ browser {
 :root:-moz-window-inactive #urlbar {
     background: var(--urlbar-overlay-non-active) !important;
 }
+
+#urlbar #identity-box.extensionPage #identity-icon-label {
+  display: none !important;
+}

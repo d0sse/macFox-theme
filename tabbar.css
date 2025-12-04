@@ -22,12 +22,46 @@
 	box-shadow: none !important;
 }
 
+/* Toolbar icons - without radius mask */
 .toolbarbutton-1 image {
-	border-radius: var(--border-circle) !important;
+    border-radius: 0 !important;
+}
+
+/* Rounded background for icons */
+#nav-bar toolbarbutton,
+#nav-bar .toolbarbutton-1 {
+    border-radius: var(--border-circle) !important;
+}
+
+/* rounded hover / open / active */
+#nav-bar toolbarbutton:hover,
+#nav-bar toolbarbutton[open],
+#nav-bar toolbarbutton:active {
+    border-radius: var(--border-circle) !important;
+    background-clip: padding-box !important;
+}
+
+/* Optional fix? */
+#nav-bar .toolbarbutton-1:hover .toolbarbutton-icon,
+#nav-bar .toolbarbutton-1[open] .toolbarbutton-icon,
+#nav-bar .toolbarbutton-1:active .toolbarbutton-icon,
+#nav-bar .toolbarbutton-1:hover .toolbarbutton-badge-stack,
+#nav-bar .toolbarbutton-1[open] .toolbarbutton-badge-stack,
+#nav-bar .toolbarbutton-1:active .toolbarbutton-badge-stack {
+    border-radius: var(--border-circle) !important;
 }
 
 .tab-close-button {
 	border-radius: var(--border-circle) !important;
+}
+/* rounded new tab icon */
+#tabs-newtab-button image {
+    border-radius: var(--border-circle) !important;
+}
+
+/* rounded new tab icon in navbar */
+#nav-bar #new-tab-button image {
+    border-radius: var(--border-circle) !important;
 }
 
 .tabbrowser-tab:hover:not([selected]):not([multiselected]) .tab-background {

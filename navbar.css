@@ -27,7 +27,7 @@
 #nav-bar .toolbarbutton-1 image,
 #nav-bar .toolbarbutton-1 .toolbarbutton-badge-stack {
 	fill: var(--tint-color-primary) !important;
-	border-radius: var(--border-circle) !important;
+	border-radius: 0 !important;
 }
 
 #nav-bar .toolbarbutton-1 {
