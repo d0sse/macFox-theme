@@ -60,11 +60,11 @@
 }
 
 /* Inactive Window Styles */
+/* :root:-moz-window-inactive browser */
 :root:-moz-window-inactive #navigator-toolbox,
 :root:-moz-window-inactive #nav-bar,
 :root:-moz-window-inactive #TabsToolbar,
-:root:-moz-window-inactive #titlebar,
-:root:-moz-window-inactive browser {
+:root:-moz-window-inactive #titlebar {
     background: -moz-mac-vibrancy-underlay !important;
     /* Slightly desaturated tint */
     -moz-appearance: -moz-mac-vibrancy-dark !important;
@@ -78,7 +78,10 @@
     backdrop-filter: blur(20px) !important;
 }
 
-
+#trust-icon-container {
+    border-radius: var(--border-circle) !important;
+    margin-left: 0 !important;
+}
 
 #TabsToolbar .titlebar-buttonbox-container {
     margin-left: 6px !important;

@@ -24,9 +24,6 @@ body {
 }
 
 @media (prefers-color-scheme: light) {
-	body {
-		background-color: #FEFEFE;
-	}
 
 	body.neterror,
 	body#viewsource {
@@ -35,9 +32,6 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
-	body {
-		background-color: #323233;
-	}
 
 	body.neterror,
 	body#viewsource {
