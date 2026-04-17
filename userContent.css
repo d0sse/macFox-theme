@@ -19,9 +19,7 @@ html.b_firefox {
 	display: none !important;
 }
 
-body {
-	background-color: #cacaca;
-}
+
 
 @media (prefers-color-scheme: light) {
 
