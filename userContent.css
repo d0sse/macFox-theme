@@ -22,6 +22,9 @@ html.b_firefox {
 
 
 @media (prefers-color-scheme: light) {
+	body {
+		background-color: white;
+	}
 
 	body.neterror,
 	body#viewsource {
