@@ -22,6 +22,8 @@ html.b_firefox {
 
 
 @media (prefers-color-scheme: light) {
+
+	html,
 	body {
 		background-color: white;
 	}
@@ -33,6 +35,11 @@ html.b_firefox {
 }
 
 @media (prefers-color-scheme: dark) {
+
+	html,
+	body {
+		background-color: #323233;
+	}
 
 	body.neterror,
 	body#viewsource {
@@ -46,6 +53,8 @@ body.pageCharlie {
 }
 
 @-moz-document url-prefix("about:") {
+
+	html,
 	body {
 		background-color: transparent !important;
 	}
