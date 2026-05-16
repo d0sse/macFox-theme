@@ -60,6 +60,20 @@ body.pageCharlie {
 	}
 }
 
+@-moz-document url-prefix("about:neterror"),
+url-prefix("about:certerror"),
+url-prefix("about:httpsonlyerror") {
+
+	html,
+	body {
+		background-color: white !important;
+	}
+
+	body.neterror {
+		background-color: white !important;
+	}
+}
+
 @-moz-document url-prefix("https://x.com") {
 
 	html,
