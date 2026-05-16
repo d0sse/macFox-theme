@@ -59,3 +59,11 @@ body.pageCharlie {
 		background-color: transparent !important;
 	}
 }
+
+@-moz-document url-prefix("https://x.com") {
+
+	html,
+	body {
+		background-color: inherit;
+	}
+}
