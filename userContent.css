@@ -62,15 +62,34 @@ body.pageCharlie {
 
 @-moz-document url-prefix("about:neterror"),
 url-prefix("about:certerror"),
-url-prefix("about:httpsonlyerror") {
+url-prefix("about:httpsonlyerror"),
+url-prefix("about:logins"),
+url-prefix("about:preferences") {
 
-	html,
-	body {
-		background-color: white !important;
+	@media (prefers-color-scheme: light) {
+
+		html,
+		body {
+			background-color: white !important;
+		}
+
+		body.neterror,
+		body#viewsource {
+			background-color: white !important;
+		}
 	}
 
-	body.neterror {
-		background-color: white !important;
+	@media (prefers-color-scheme: dark) {
+
+		html,
+		body {
+			background-color: #323233 !important;
+		}
+
+		body.neterror,
+		body#viewsource {
+			background-color: #323233 !important;
+		}
 	}
 }
 
