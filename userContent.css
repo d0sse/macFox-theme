@@ -64,6 +64,7 @@ body.pageCharlie {
 url-prefix("about:certerror"),
 url-prefix("about:httpsonlyerror"),
 url-prefix("about:logins"),
+url-prefix("about:addons"),
 url-prefix("about:preferences") {
 
 	@media (prefers-color-scheme: light) {
