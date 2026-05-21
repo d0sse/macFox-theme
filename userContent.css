@@ -49,10 +49,10 @@ body.pageCharlie {
 
 @-moz-document url-prefix("about:") {
 
-	.customize-menu,
-	.logo-and-wordmark-wrapper,
-	.main-button,
-	.personalize-button {
+	.nova-outer-wrapper .customize-menu,
+	.nova-outer-wrapper .logo-and-wordmark-wrapper,
+	.nova-outer-wrapper .main-button,
+	.nova-outer-wrapper .personalize-button {
 		display: none !important;
 	}
 
