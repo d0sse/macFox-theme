@@ -85,3 +85,7 @@ findbar {
 	border: 1px solid var(--accent) !important;
 	background-color: rgba(255, 255, 255, 0.2) !important;
 }
+
+.searchmode-switcher {
+	margin: 3px 1px 3px 4px;
+}
