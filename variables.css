@@ -1,0 +1,126 @@
+/* ==========================================================================
+   macFox – Theme variables
+   --------------------------------------------------------------------------
+   Every custom property the theme defines lives here, so the component
+   stylesheets (navbar / urlbar / tabbar / icons) contain rules only.
+   This file is imported first by userChrome.css.
+   ========================================================================== */
+
+:root {
+	/* ----------------------------------------------------------------------
+	   Firefox compatibility aliases
+	   Firefox 152 renamed the toolbar custom properties:
+	     --toolbar-bgcolor -> --toolbar-background-color
+	     --toolbar-color   -> --toolbar-text-color
+	   These aliases resolve to the new name first and fall back to the legacy
+	   name, so the rest of the theme can reference a single pair regardless of
+	   the Firefox version (151 and earlier vs 152+).
+	   ---------------------------------------------------------------------- */
+	--mf-toolbar-bg: var(--toolbar-background-color, var(--toolbar-bgcolor));
+	--mf-toolbar-fg: var(--toolbar-text-color, var(--toolbar-color));
+
+	/* ----------------------------------------------------------------------
+	   Accent color (system macOS accent, exposed to Firefox internals)
+	   ---------------------------------------------------------------------- */
+	--accent: AccentColor;
+	--lwt-accent-color: AccentColor;
+	--tab-loading-fill: AccentColor !important;
+	--button-primary-bgcolor: AccentColor !important;
+
+	/* ----------------------------------------------------------------------
+	   Corner radii (overridden by the Tahoe UI block below)
+	   ---------------------------------------------------------------------- */
+	--border-circle: 8px;
+	--border-big: 8px;
+	--border-big-2: 8px;
+
+	/* ----------------------------------------------------------------------
+	   Tab sizing
+	   ---------------------------------------------------------------------- */
+	--tab-min-height: 32px !important;
+	--tab-min-width: 66px !important;
+
+	/* ----------------------------------------------------------------------
+	   Tab background overlays
+	   Base color is whatever the theme/extension provides; overlays are a
+	   translucent tint of the toolbar text color so tabs read correctly on
+	   both light and dark backgrounds.
+	   ---------------------------------------------------------------------- */
+	--tab-base-color: var(--mf-toolbar-bg);
+	--tab-overlay-neutral: color-mix(in srgb, var(--mf-toolbar-fg) 5%, transparent);
+	--tab-overlay-hover: color-mix(in srgb, var(--mf-toolbar-fg) 25%, transparent);
+	--tab-overlay-active: color-mix(in srgb, var(--mf-toolbar-fg) 20%, transparent);
+	--tab-color: var(--tab-overlay-neutral);
+	--tab-hover-color: var(--tab-overlay-hover);
+	--tab-active-color: var(--tab-overlay-active);
+
+	/* ----------------------------------------------------------------------
+	   Toolbar buttons
+	   Firefox 152 moved these to the --toolbarbutton-<prop>-<state> scheme.
+	   The new names are set for 152+, the legacy names for 151 and earlier.
+	   Hover/active colors come from ATBC's --hover-color-primary.
+	   ---------------------------------------------------------------------- */
+	--toolbarbutton-background-color-hover: var(--hover-color-primary) !important;
+	--toolbarbutton-background-color-active: var(--hover-color-primary) !important;
+	--toolbarbutton-padding-inner: 6px !important;
+	/* Legacy names (Firefox <= 151) */
+	--button-hover-bgcolor: var(--hover-color-primary) !important;
+	--toolbarbutton-active-background: var(--hover-color-primary) !important;
+	--toolbarbutton-inner-padding: 6px !important;
+
+	/* ----------------------------------------------------------------------
+	   URL bar geometry
+	   The address bar is a little shorter than default. Its inner controls
+	   are uniformly inset by --urlbar-inner-margin, so their corner radius
+	   follows the nested "distance formula" (inner = outer - margin) and
+	   stays concentric with the urlbar's own --border-circle corners.
+	   Control height is derived so the inset is equal on every side:
+	   height = urlbar-height - 2 * inner-margin.
+	   ---------------------------------------------------------------------- */
+	--urlbar-height: 30px;
+	--urlbar-inner-margin: 4px;
+	--urlbar-control-height: calc(var(--urlbar-height) - 2 * var(--urlbar-inner-margin));
+	--urlbar-inner-radius: max(0px, calc(var(--border-circle) - var(--urlbar-inner-margin)));
+
+	/* ----------------------------------------------------------------------
+	   URL bar colors
+	   ---------------------------------------------------------------------- */
+	--urlbar-solid-bg: #f2f2f2;
+	--urlbar-base-color: var(--mf-toolbar-bg);
+	--urlbar-overlay-active: color-mix(in srgb, var(--mf-toolbar-fg) 5%, transparent);
+	--urlbar-overlay-non-active: color-mix(in srgb, var(--mf-toolbar-fg) 9%, transparent);
+	--url-border-color: rgba(0, 0, 0, 0.15);
+	--url-placeholder-color: rgba(0, 0, 0, 0.5);
+	--url-bar-outline-color: AccentColor;
+	--toolbar-field-focus-color: AccentColor;
+
+	/* ----------------------------------------------------------------------
+	   Misc
+	   ---------------------------------------------------------------------- */
+	--fullscreen-color: #fafafa;
+}
+
+/* Enable Safari-like Tahoe UI when `userChrome.tahoeUI.enabled` is true in about:config */
+@media -moz-pref("userChrome.tahoeUI.enabled") {
+	:root {
+		--border-circle: 99px;
+		--border-big: 20px;
+		--border-big-2: 16px;
+	}
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--fullscreen-color: #2a2a2a;
+		--urlbar-solid-bg: #2b2b2b;
+		--url-border-color: rgba(255, 255, 255, 0.15);
+		--url-placeholder-color: rgba(255, 255, 255, 0.5);
+	}
+}
+
+/* If Firefox/ATBC provides a dynamic field color, prefer it. Must stay after
+   the base + dark definitions so it wins the cascade. */
+:root {
+	--urlbar-solid-bg: var(--toolbar-field-background-color, var(--urlbar-solid-bg));
+}

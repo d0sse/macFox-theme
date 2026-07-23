@@ -6,7 +6,7 @@
 
 Hi! I'm [d0sse](https://github.com/d0sse) and this is Minimalist Mac - Safari-like - Firefox theme.
 
-> 🚀 **UPDATED FOR FIREFOX 151**
+> 🚀 **UPDATED FOR FIREFOX 153**
 
 ## Features
 
@@ -60,23 +60,49 @@ To start using MacFox, follow these steps:
     widget.macos.titlebar-blend-mode.behind-window
     ```
 
-5. Go to the following url address `about:support`.
-6. Find "Profile Folder" section in the "Application Basics" list and copy the path (defined below as `$path`).
-7. Open `terminal.app` and type:
+5. If you want to disable the tab hover preview (the thumbnail card shown when hovering a tab), set this pref to `false`:
+
+    ```text
+    browser.tabs.hoverPreview.enabled
+    ```
+
+Then install the theme using **either** the quick script (recommended) or the manual steps below.
+
+#### Option A — Install script (recommended)
+
+1. Clone the repo anywhere and run the installer:
+
+    ```bash
+    git clone git@github.com:d0sse/macFox-theme.git
+    cd macFox-theme
+    ./install.sh
+    ```
+
+    The script auto-detects your default Firefox profile and copies the theme's
+    CSS files into its `chrome` folder. To target a specific profile, pass its
+    path: `./install.sh /path/to/profile`.
+
+2. Apply `about:blank` for new windows and new tabs.
+3. Fully restart Firefox (`Cmd+Q`, then reopen) to apply changes.
+
+#### Option B — Manual
+
+1. Go to the following url address `about:support`.
+2. Find "Profile Folder" section in the "Application Basics" list and copy the path (defined below as `$path`).
+3. Open `terminal.app` and type:
 
     ```bash
     cd $path
     ```
 
-8. Type in the following command:
+4. Type in the following command:
 
     ```bash
     git clone git@github.com:d0sse/macFox-theme.git chrome
     ```
 
-9. Apply `about blank` for New windows and new tabs.
-
-10. Restart Firefox to apply changes.
+5. Apply `about:blank` for new windows and new tabs.
+6. Fully restart Firefox (`Cmd+Q`, then reopen) to apply changes.
 
 ## Privacy & Telemetry
 

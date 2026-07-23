@@ -1,47 +1,10 @@
 /* Firefox macOS style */
+@import "variables.css";
 @import "navbar.css";
 @import "urlbar.css";
 @import "icons.css";
 @import "tabbar.css";
 
-
-:root {
-    --accent: AccentColor;
-    --lwt-accent-color: AccentColor;
-    --tab-loading-fill: AccentColor !important;
-    --button-primary-bgcolor: AccentColor !important;
-    --border-circle: 8px;
-    --border-big: 8px;
-    --border-big-2: 8px;
-    --tab-min-height: 32px !important;
-    --tab-min-width: 66px !important;
-    --fullscreen-color: #fafafa;
-    --urlbar-solid-bg: #f2f2f2;
-    --urlbar-base-color: var(--toolbar-bgcolor);
-    --urlbar-overlay-active: color-mix(in srgb, var(--toolbar-color) 5%, transparent);
-    --urlbar-overlay-non-active: color-mix(in srgb, var(--toolbar-color) 9%, transparent);
-}
-
-/* Enable Safari-like Tahoe UI when `userChrome.tahoeUI.enabled` is true in about:config */
-@media -moz-pref("userChrome.tahoeUI.enabled") {
-    :root {
-        --border-circle: 99px;
-        --border-big: 20px;
-        --border-big-2: 16px;
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --fullscreen-color: #2a2a2a;
-        --urlbar-solid-bg: #2b2b2b;
-    }
-}
-
-/* If Firefox/ATBC provides a dynamic color, override the fallback */
-:root {
-    --urlbar-solid-bg: var(--toolbar-field-background-color, var(--urlbar-solid-bg));
-}
 
 /* Active Window Styles */
 #navigator-toolbox,
@@ -79,7 +42,7 @@
 }
 
 #trust-icon-container {
-    border-radius: var(--border-circle) !important;
+    border-radius: var(--urlbar-inner-radius) !important;
     margin-left: 0 !important;
 }
 
@@ -107,8 +70,8 @@
 }
 
 #nav-bar {
-    padding-top: 3px !important;
-    padding-bottom: 2px !important;
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
 }
 
 #TabsToolbar {
@@ -121,7 +84,7 @@
 :root[sizemode="fullscreen"] #PersonalToolbar,
 :root[sizemode="fullscreen"] #TabsToolbar,
 :root[sizemode="fullscreen"] #nav-bar {
-    background-color: var(--toolbar-bgcolor, var(--fullscreen-color)) !important;
+    background-color: var(--mf-toolbar-bg, var(--fullscreen-color)) !important;
 }
 
 #browser {
@@ -140,13 +103,13 @@ browser {
 }
 
 .urlbar-page-action {
-    margin: 2px !important;
-    border-radius: var(--border-circle) !important;
+    margin: var(--urlbar-inner-margin) !important;
+    border-radius: var(--urlbar-inner-radius) !important;
     opacity: 0.3;
 }
 
 .urlbar-page-action:hover {
-    margin: 2px !important;
+    margin: var(--urlbar-inner-margin) !important;
     opacity: 1.0;
 }
 
@@ -159,8 +122,8 @@ browser {
 }
 
 .identity-box-button {
-    margin: 2px !important;
-    border-radius: var(--border-circle) !important;
+    margin: var(--urlbar-inner-margin) !important;
+    border-radius: var(--urlbar-inner-radius) !important;
     opacity: 0.3;
 }
 
@@ -169,8 +132,8 @@ browser {
 }
 
 #urlbar-searchmode-switcher {
-    margin: 3px !important;
-    border-radius: var(--border-circle) !important;
+    margin: var(--urlbar-inner-margin) !important;
+    border-radius: var(--urlbar-inner-radius) !important;
     opacity: 0.3;
 }
 

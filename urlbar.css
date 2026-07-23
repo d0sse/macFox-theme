@@ -1,24 +1,11 @@
-:root {
-	--url-border-color: rgba(0, 0, 0, 0.15);
-	--url-placeholder-color: rgba(0, 0, 0, 0.5);
-	--url-bar-outline-color: AccentColor;
-	--toolbar-field-focus-color: AccentColor;
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--url-border-color: rgba(255, 255, 255, 0.15);
-		--url-placeholder-color: rgba(255, 255, 255, 0.5);
-	}
-}
-
+/* URL bar colors live in variables.css */
 
 #urlbar-container {
 	max-width: 50% !important;
 }
 
 #urlbar {
-	min-height: 32px !important;
+	min-height: var(--urlbar-height) !important;
 	font-size: 13px !important;
 	margin-bottom: 2px !important;
 }
@@ -33,19 +20,14 @@
 	text-align: center !important;
 }
 
-/* Urlbar icons look */
+/* Urlbar icons look (corner radii handled by the nested-radius rule below) */
 .urlbar-page-action {
-	height: 24px !important;
-	border-radius: 5px !important;
+	height: var(--urlbar-control-height) !important;
 }
 
 .urlbar-page-action image {
 	margin-top: -2px !important;
 	transform: scale(0.9, 0.9) !important;
-}
-
-.identity-box-button {
-	border-radius: 4px !important;
 }
 
 .identity-box-button image {
@@ -92,7 +74,7 @@
 }
 
 #star-button-box {
-	margin: 2px !important;
+	margin: var(--urlbar-inner-margin) !important;
 }
 
 #star-button[starred="true"] {
@@ -103,14 +85,17 @@
 	background-color: transparent !important;
 }
 
+/* Nested corner radius: controls inset inside the urlbar keep corners
+   concentric with the urlbar's rounded edge (radius = outer - margin). */
 .identity-box-button,
-.urlbar-page-action {
-	border-radius: var(--border-circle) !important;
+.urlbar-page-action,
+#star-button-box,
+.urlbar-revert-button {
+	border-radius: var(--urlbar-inner-radius) !important;
 }
 
 .urlbar-revert-button {
 	margin-right: 4px;
-	border-radius: var(--border-circle) !important;
 }
 
 #urlbar[open] .urlbarView-row {
