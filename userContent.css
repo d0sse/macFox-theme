@@ -52,7 +52,11 @@ body.pageCharlie {
 	.nova-outer-wrapper .customize-menu,
 	.nova-outer-wrapper .logo-and-wordmark-wrapper,
 	.nova-outer-wrapper .main-button,
-	.nova-outer-wrapper .personalize-button {
+	.nova-outer-wrapper .personalize-button,
+	/* Non-Nova New Tab: the bottom-right "personalize / customize" pencil */
+	.personalizeButtonWrapper,
+	.personalize-button,
+	.customize-menu {
 		display: none !important;
 	}
 

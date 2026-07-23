@@ -1,8 +1,10 @@
 #nav-bar {
-	height: 42px !important;
+	height: 44px !important;
 	border: 0 !important;
 	padding-left: 8px !important;
 	padding-right: 8px !important;
+	padding-top: 4px !important;
+	padding-bottom: 4px !important;
 }
 
 #main-window[inFullscreen] #nav-bar {
@@ -17,13 +19,7 @@
 	background-color: var(--background-color-primary) !important;
 }
 
-/* Toolbar button look */
-:root {
-	--button-hover-bgcolor: var(--hover-color-primary) !important;
-	--toolbarbutton-inner-padding: 6px !important;
-	--toolbarbutton-active-background: var(--hover-color-primary) !important;
-}
-
+/* Toolbar button look (button colors/padding live in variables.css) */
 #nav-bar .toolbarbutton-1 image,
 #nav-bar .toolbarbutton-1 .toolbarbutton-badge-stack {
 	fill: var(--tint-color-primary) !important;
